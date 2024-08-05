@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+	android:clickable="true"
+    android:orientation="vertical" >
+    <ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+    <LinearLayout	    
+        android:id="@+id/parentView"  
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@color/bg_color"
+	    android:orientation="vertical" >
+
+	    <TextView
+	        android:id="@+id/title_txtvw"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="@dimen/margin_10"
+	        android:padding="@dimen/margin_5"
+	        android:text="ADD AUDIO"
+	        android:textColor="@color/color_dark_grey"
+	        android:textSize="@dimen/text_size_16"
+	        android:textStyle="bold" 
+	        android:visibility="gone"/>
+	
+	    <TextView
+	        android:id="@+id/counter_txtvw"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="@dimen/margin_10"
+	        android:gravity="center"
+	        android:padding="@dimen/margin_5"
+	        android:text="00"
+	        android:textColor="@color/bg_sky_blue"
+	        android:textSize="@dimen/text_size_45"
+	        android:textStyle="bold" />
+	
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical" >	            
+	     
+	        <WebView
+		        android:id="@+id/webviewRecordAud"
+		        android:layout_width="400dp"
+		        android:layout_height="wrap_content"	        	                  
+		        android:layout_centerInParent="true"
+	            android:layout_gravity="center"
+		        android:scrollbars="none"
+		        android:visibility="gone">
+	 		</WebView>
+	 		  
+	        <ImageView
+	            android:id="@+id/imgRecordAud"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerInParent="true"
+	            android:layout_gravity="center"
+	            android:background="@drawable/movefix"            
+	        	android:visibility="gone"/>
+	        
+	    </RelativeLayout>
+	
+	    <TextView
+	        android:id="@+id/start_stop_txtvw"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:layout_gravity="center"
+	        android:layout_margin="@dimen/margin_20"
+	        android:background="@drawable/rounded_green_fill_bg"
+	        android:paddingTop="@dimen/margin_12"
+	        android:paddingBottom="@dimen/margin_12"
+	        android:paddingLeft="@dimen/margin_25"
+	        android:paddingRight="@dimen/margin_25"
+	        android:text="Record"
+	        android:textColor="@color/color_white"
+	        android:textSize="@dimen/text_size_18"
+	        android:textStyle="bold" />
+	
+	    <EditText
+	        android:id="@+id/filename_txtvw"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/margin_40"
+	        android:layout_margin="@dimen/margin_5"
+	        android:background="@drawable/roundable_edittext"
+	        android:padding="@dimen/margin_5"
+	        android:singleLine="true" 
+	        android:textColor="@android:color/black"
+	        android:editable="true"
+			android:maxLength="50"
+	        android:focusable="true"
+	        android:textSize="@dimen/text_size_20"
+	        android:textCursorDrawable="@null"
+	        />
+	</LinearLayout>
+	</ScrollView>
+	  
+	    <WebView
+	       android:id="@+id/webviewRecordAudios"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_centerVertical="true"
+	       android:layout_centerHorizontal="true" 
+	       android:visibility="gone"
+	       android:scrollbars="none"/> 
+
+	</RelativeLayout>

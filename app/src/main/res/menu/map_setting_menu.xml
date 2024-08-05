@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/map_normal"
+        android:title="Normal"
+       />
+
+    <item  
+        android:id="@+id/map_satellite"  
+        android:title="Satellite"/>  
+        
+    <item  
+        android:id="@+id/map_hybrid"  
+        android:title="Hybrid"/> 
+        
+    <item
+        android:id="@+id/map_on_off_line"
+        android:title="Offline"/>
+    <item
+        android:id="@+id/map_on_off_line_Img"
+        android:title="Offline Imagery"/>
+</menu>

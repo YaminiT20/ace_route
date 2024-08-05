@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <LinearLayout
+        android:id="@+id/parentView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:padding="@dimen/margin_5"
+            android:text="@string/tag_fragment_name"
+            android:textAllCaps="true"
+            android:textColor="@color/color_dark_grey"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="bold" 
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@drawable/rounded_white_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_10" >
+
+            <TextView
+                android:id="@+id/txt_category_taskfrag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:text="@string/lbl_task_type"
+                android:textAllCaps="true"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/text_size_22" />
+
+            <EditText
+                android:id="@+id/edtTaskType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@drawable/rounded_green_fill_bg"
+                android:editable="false"
+                android:padding="@dimen/margin_10"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_22" />
+
+            <TextView
+                android:id="@+id/edtTaskDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/text_size_18" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@drawable/rounded_white_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_10" >
+
+            <TextView
+                android:id="@+id/txt_status_taskfrag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:text="Status"
+                android:textAllCaps="true"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/text_size_22" />
+
+            <EditText
+                android:id="@+id/edtTaskStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@drawable/rounded_green_fill_bg"
+                android:editable="false"
+                android:padding="@dimen/margin_10"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_22" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@drawable/rounded_white_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_10" >
+
+            <TextView
+                android:id="@+id/txt_count_taskfrag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:text="@string/lbl_task_rate"
+                android:textAllCaps="true"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/text_size_22" />
+
+            <EditText
+                android:id="@+id/edtTaskRate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_40"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@drawable/roundable_edittext"
+                android:inputType="numberDecimal"
+                android:padding="@dimen/margin_5"
+                android:singleLine="true"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size_22" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_10"
+            android:paddingBottom="10dp" >
+
+            <TextView
+                android:id="@+id/textViewTaskComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="COMMENTS"
+                android:textColor="#95a5a6"
+                android:textSize="@dimen/text_size_22" />
+
+            <com.aceroute.mobile.software.CustomEditText
+                android:id="@+id/edtTaskComment"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:inputType="textMultiLine"
+                android:imeOptions="actionNext"
+                android:background="@drawable/roundable_edittext"
+                android:padding="5dp"
+                android:paddingLeft="5dp"
+                android:textColor="#000000"
+                android:textSize="@dimen/text_size_22"/>
+        </LinearLayout>
+
+    </LinearLayout>
+ </ScrollView>
+    <WebView
+        android:id="@+id/webviewAddTaskOld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+</RelativeLayout>

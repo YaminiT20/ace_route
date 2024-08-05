@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="alertcolor">#4c4c4e</color>
+    <color name="blue_filling">#e0e0ff</color>
+    <color name="blue_outline">#6060ff</color>
+    <color name="darker_grey">#404040</color>
+    <color name="grey">#c0c0c0</color>
+    <color name="grey_options_group">#a0a0a0</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="selected">#FAEFAA</color>
+    <color name="medium_gray">#8A8686</color>
+    <color name="light_gray">#4c4c4e</color>
+    <color name="lt_light_gray">#7f7f80</color>
+    <color name="color_light_gray">#E5E5E7</color>
+    <color name="light_black">#798795</color>
+    <color name="timeoffbackground">#f1c40f</color>
+    <color name="dlg_light_green">#1abc9c</color>
+    <!--<color name="shift_background">#2980B9</color>-->
+    <!--<color name="dayoff_background">#C0392B</color>-->
+    <!--<color name="defaultbackground">#95a5a6</color>-->
+    <color name="default_background">#7F8C8D</color>
+    <color name="dayoff_background">#ECF0F1</color>
+    <color name="dayoff_text">#4c4c4e</color>
+    <color name="server_background">#34495F</color>
+    <color name="shift_background">#3498DE</color>
+    <color name="break_background">#27AE60</color>
+    <color name="break_gacc_background">#E74C3C</color>
+    <color name="black_effective">#2a2a2a</color>
+
+
+    <color name="dlg_light_gray">#CCCCCC</color>
+    <color name="btn_color_gray">#EEEEEE</color>
+    <color name="btn_color_green">#10c195</color>
+    <color name="bg_color">#EDEFF2</color>
+    <color name="bg_header">#34495F</color>
+    <color name="bdr_green">#1ABC9C</color>
+    <color name="bg_sky_blue">#3498DB</color>
+    <color name="color_grey">#2c2c2c</color>
+    <color name="color_red">#900</color>
+    <color name="color_dark_red">#FF0000</color>
+    <color name="color_light_green">#B2DFDB</color>
+    <color name="color_dark_grey">#D7CCC8</color>
+    <color name="color_light_purple">#C5CAE9</color>
+    <color name="light_gray_header_color">#646663</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_light_blue">#fafafa</color>
+    <color name="bdr_orange">#F39C12</color>
+    <color name="color_orange_dark">#D35400</color>
+    <color name="color_red_dark">#E74C3C</color>
+    <color name="color_green">#8BC349</color>
+    <color name="color_darkgreen_delete">#7B8F36</color>
+    <color name="color_dark_green">#2C3E50</color>
+    <color name="color_blue_dark">#34495E</color>
+    <color name="color_navy_blue">#7F8C8D</color>
+    <color name="mapfillColor">#CC87CEFA</color>
+</resources>

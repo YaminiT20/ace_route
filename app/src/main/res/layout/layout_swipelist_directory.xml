@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/back_dirc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:tag="back" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+             >
+
+            <TextView
+                android:id="@+id/back_view_invite_textview_dirc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:padding="@dimen/margin_15"
+                android:drawableLeft="@drawable/row_edit"
+                android:gravity="center|left"
+                android:text="  Edit"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_20" />
+
+            <!--YD this is the dummy text box just to increase the size of the swipe which is in background-->
+            <TextView
+                android:id="@+id/back_view_dummy_dirc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_22"
+                android:layout_below="@+id/back_view_invite_textview_dirc"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+           >
+
+            <TextView
+                android:id="@+id/back_view_chat_textview_dirc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_20"
+                android:padding="@dimen/margin_14"
+                android:drawableRight="@drawable/row_edit"
+                android:gravity="center|right"
+                android:text="Edit  "
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_20"/>
+            <TextView
+                android:id="@+id/back_view_dummy1_dirc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_22"
+                android:layout_below="@+id/back_view_chat_textview_dirc"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/front_dirc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_white_bg"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_10"
+        android:tag="front" >
+
+        <ImageView
+            android:id="@+id/cust_list_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+           <!-- android:src="@drawable/main_contact_edit"--> <!--odr_user-->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_size_10"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/cust_list_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="dsfa"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/text_size_22"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/cust_list_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/text_size_22"/>
+
+
+
+            <RelativeLayout
+                android:id="@+id/relative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10">
+
+                <TextView
+                    android:id="@+id/cust_list_cno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/cust_list_call"
+                    android:text=""
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/text_size_22" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/cust_list_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:autoLink="web"
+                    android:text="@string/lbl_call_contact"
+                    android:textColor="@color/bdr_green"
+                    android:textSize="@dimen/text_size_20"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

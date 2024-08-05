@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dip" >
+
+    <TextView
+        android:id="@+id/text_title_dpopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6.5dp"
+        android:gravity="center"
+        android:textSize="17.65dp"
+        android:visibility="gone"
+        android:layout_above="@+id/text_mesg_popup"
+        android:text="SLIGHT PROBLEM WITH DATA"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#A94751"
+        />
+
+    <TextView
+        android:id="@+id/text_mesg_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"   
+        android:gravity="left"        
+        android:layout_marginTop="@dimen/margin_10"        
+        android:layout_marginLeft="@dimen/margin_12"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginBottom="@dimen/margin_15"
+        android:text=""
+        android:textColor="@color/light_gray"
+        android:textSize="@dimen/text_size_22"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <SeekBar
+        android:id="@+id/auto_sync_opt_time_interval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_mesg_popup"
+        android:padding="@dimen/margin_10"
+        android:layout_weight="1"
+        android:max="3"
+        android:progress="0"
+        android:progressDrawable="@drawable/progressbar"
+        android:secondaryProgress="0"
+        android:thumb="@drawable/notification"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:id="@+id/ll_min_lst"
+        android:layout_below="@+id/auto_sync_opt_time_interval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/margin_5"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="normal"
+            android:textColor="@color/bg_header"
+            android:textSize="@dimen/text_size_16"
+            android:text="Never"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="normal"
+            android:textColor="@color/bg_header"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_16"
+            android:text="10 Mins"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="normal"
+            android:textColor="@color/bg_header"
+            android:textAlignment="viewEnd"
+            android:textSize="@dimen/text_size_16"
+            android:text="30 Mins"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="normal"
+            android:textColor="@color/bg_header"
+            android:textAlignment="viewEnd"
+            android:textSize="@dimen/text_size_16"
+            android:text="60 Mins"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_id"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ll_min_lst"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@color/color_dark_grey"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/line_id"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/butt_yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_light_blue"
+            android:text="Cancel"
+            android:textStyle="normal"
+            android:textColor="@color/bg_header"
+            android:textSize="@dimen/text_size_20" 
+            android:visibility="gone"  />        
+        
+        <Button
+            android:id="@+id/butt_no_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_light_blue"
+            android:text="OK"
+            android:textStyle="normal"
+            android:textColor="@color/bg_header"
+            android:textSize="@dimen/text_size_20" 
+            android:visibility="gone" />
+        
+    </LinearLayout>
+</RelativeLayout>

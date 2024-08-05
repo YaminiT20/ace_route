@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="100dp"
+    android:minHeight="24dp"
+    android:background="@drawable/rounded_corners"
+    android:clickable="true"    
+    android:padding="10dp" >
+    
+    <LinearLayout
+        android:id="@+id/mid_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"     
+        android:layout_alignParentLeft="true"     
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/bottom_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:linksClickable="true"
+            android:text="Subtitle text"
+            android:textColor="@color/black"
+            android:textSize="17.65dp"
+            android:textStyle="bold" 
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/order_time"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text=""
+            android:textColor="@color/bg_sky_blue"
+            android:textSize="19.65dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/order_name"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="19.65dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/order_Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="17.65dp" 
+            android:visibility="gone"/>
+        
+        <TextView
+            android:id="@+id/customer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="17.65dp"
+            android:textStyle="bold" 
+            android:visibility="gone"/>
+        
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="17.65dp" 
+            android:visibility="gone"/>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mid_layout"
+        android:layout_centerHorizontal="true"            
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="2" >
+        
+        <ImageView
+            android:id="@+id/Bt_zoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/marker_next"    			
+            android:visibility="gone" />
+        
+        <ImageView
+            android:id="@+id/Bt_editList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/edit_asset_map"
+            android:visibility="gone"
+            />        <!--edit_list_map earlier bg image-->
+                 
+    </LinearLayout> 
+    
+</RelativeLayout>

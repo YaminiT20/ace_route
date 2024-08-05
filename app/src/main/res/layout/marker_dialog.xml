@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <!--
+         <TextView"assets/www/js/software/appStartup.js"
+        android:id="@+id/tv_markerTitle"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:la"assets/www/js/software/appStartup.js"yout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:text="Aceroute" />
+    -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_marker_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time : "
+            android:textStyle="bold"
+            android:textColor="#4C4C4E" />
+
+        <TextView
+            android:id="@+id/tv_marker_cust_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_marker_time"
+            android:layout_toRightOf="@+id/tv_marker_time"
+            android:singleLine="true"
+            android:textColor="#4C4C4E" />
+
+        <TextView
+            android:id="@+id/tv_marker_order_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_marker_time"
+            android:text="Order ID : "
+            android:textStyle="bold"
+            android:textColor="#4C4C4E" />
+
+        <TextView
+            android:id="@+id/tv_marker_cust_order_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_marker_order_id"
+            android:layout_toRightOf="@+id/tv_marker_order_id"
+            android:singleLine="true"
+            android:textColor="#4C4C4E" />
+
+        <TextView
+            android:id="@+id/tv_marker_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_marker_order_id"
+            android:text="Name : "
+            android:textStyle="bold"
+            android:textColor="#4C4C4E" />
+
+        <TextView
+            android:id="@+id/tv_marker_cust_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_marker_name"
+            android:layout_toRightOf="@+id/tv_marker_name"
+            android:singleLine="true"
+            android:textColor="#4C4C4E" />
+
+        <TextView
+            android:id="@+id/tv_marker_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_marker_name"
+            android:text="Address : "
+            android:textStyle="bold"
+            android:textColor="#4C4C4E" />
+
+        <TextView
+            android:id="@+id/tv_marker_cust_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_marker_name"
+            android:layout_toRightOf="@+id/tv_marker_address"
+            android:singleLine="false"
+            android:textColor="#4C4C4E" />
+
+        <!--
+            <TextView
+            android:id="@+id/tv_marker_cust_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_marker_address"
+            android:layout_toRightOf="@+id/tv_marker_address"
+            android:textColor="#34495f" 
+            android:text="address" />
+        -->
+
+
+        <!--
+        <TextView
+            android:id="@+id/tv_marker_cont_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_marker_time"
+            android:textColor="#34495f"
+            android:text="Contact name : " />
+
+        <TextView
+            android:id="@+id/tv_marker_cust_cont_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_marker_cont_name"
+            android:layout_below="@+id/tv_marker_time"
+            android:layout_toRightOf="@+id/tv_marker_cont_name"
+            android:text="no contact name" />
+        -->
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_marker_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/close" />
+
+</RelativeLayout>

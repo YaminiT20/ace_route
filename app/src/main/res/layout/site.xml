@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+         android:background="#34495f" >
+      
+    
+  <!--  <RelativeLayout
+        android:id="@+id/site_back_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#34495f" >
+          <RelativeLayout
+        android:id="@+id/Bck_button_site"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:background="#34495f" >
+
+        <ImageView
+            android:id="@+id/site_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:padding="5dp"
+            android:src="@drawable/button" />
+</RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <Button
+                android:id="@+id/btn_site_addgo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="5dp"
+                android:background="@drawable/page_add"
+                android:textSize="25dp" />
+            
+            <TextView
+                android:id="@+id/header_site"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10.6dp"
+                android:text="Select Location"
+                android:textColor="#FFFFFF"
+                android:textSize="17.65sp" />
+
+           <TextView
+                android:id="@+id/sub_header_site"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header_site"
+                android:layout_centerHorizontal="true"
+                android:text="Location"
+                android:textColor="#FFFFFF" 
+                android:textSize="14sp"/>
+    </RelativeLayout>
+    </RelativeLayout> -->
+
+  <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#edeff2">
+    <ListView
+            android:id="@+id/list_view_custsite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+   </LinearLayout>
+    
+
+</LinearLayout>

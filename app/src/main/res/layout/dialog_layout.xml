@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="wrap_content"
+   android:layout_height="fill_parent"
+   android:padding="5dip"
+   android:background="@color/white">
+   
+     <TextView
+        android:id="@+id/text_title_dpopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"        
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_15"
+        android:layout_marginBottom="@dimen/margin_15"
+        android:gravity="left"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_22"        
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/dlg_light_green" />
+     
+     <View        
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_below="@+id/text_title_dpopup"       
+        android:background="@color/dlg_light_green"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="0dp"/>
+
+  <RelativeLayout
+         android:id="@+id/lyt_loading"
+         android:layout_width="wrap_content"
+		 android:layout_height="55dp"
+		 android:layout_marginTop="5dp"
+		 android:layout_centerHorizontal="true"		 
+		 android:layout_below="@+id/text_title_dpopup">
+       
+        <WebView
+	        android:id="@+id/webviewActionView"
+	        android:layout_width="80dp"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"       
+	        android:scrollbars="none">
+  		</WebView>	
+       
+    </RelativeLayout>      
+       
+     <ListView
+        android:id="@+id/dialoglist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lyt_loading"
+		 android:layout_above="@+id/line_id"
+        android:divider="@null"
+        android:textAppearance="?android:attr/textAppearanceSmall"       
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:layout_marginTop="10dp"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+         android:layout_marginBottom="@dimen/margin_10"
+        android:scrollbars="none"/>
+
+    <View
+        android:id="@+id/line_id"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+		android:layout_above="@+id/button_sel"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/color_dark_grey"/>
+     
+    <LinearLayout
+		android:id="@+id/button_sel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        android:weightSum="2" >        
+       
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_light_blue"
+            android:text="Cancel"
+            android:textStyle="normal"
+            android:textColor="@color/bg_header"
+            android:textSize="@dimen/text_size_20" 
+           	android:visibility="gone"
+            />        
+        
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"         
+            android:text="OK"
+            android:background="@color/color_light_blue"
+            android:textStyle="normal"
+            android:textColor="@color/bg_header"
+            android:textSize="@dimen/text_size_20" 
+  			android:visibility="gone"
+            />
+                       
+    </LinearLayout>   
+</RelativeLayout>

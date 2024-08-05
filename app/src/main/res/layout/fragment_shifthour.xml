@@ -1,0 +1,571 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context="com.aceroute.mobile.software.fragment.ShifthourFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <LinearLayout
+          android:padding="@dimen/margin_10"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <LinearLayout
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_margin="@dimen/margin_10"
+              android:padding="@dimen/margin_10"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <CheckBox
+                  android:id="@+id/mon_txt"
+                  android:layout_alignParentTop="true"
+                  android:textColor="@android:color/darker_gray"
+                  android:text="MONDAY PATTERN"
+                  android:button="@null"
+                  android:checked="true"
+                  android:drawableRight="@xml/custom_checkbox"
+                  android:drawablePadding="@dimen/margin_5"
+                  android:layout_width="wrap_content"
+                  android:textSize="@dimen/text_size_20"
+                  android:layout_marginBottom="@dimen/margin_10"
+                  android:layout_height="wrap_content" />
+
+              <LinearLayout
+                  android:id="@+id/lay_mon"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+                  <TextView
+                      android:id="@+id/starttime_mon"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.5"
+                      android:layout_marginRight="@dimen/margin_20"
+                      android:background="@drawable/rounded_green_fill_bg"
+                      android:padding="@dimen/margin_10"
+                      android:layout_marginBottom="@dimen/margin_10"
+                      android:singleLine="true"
+                      android:gravity="center"
+                      android:text="08:00 am"
+                      android:textColor="@android:color/white"
+                      android:textSize="@dimen/text_size_20" />
+
+                  <TextView
+                      android:id="@+id/endtime_mon"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.5"
+                      android:background="@drawable/rounded_green_fill_bg"
+                      android:padding="@dimen/margin_10"
+                      android:layout_marginBottom="@dimen/margin_10"
+                      android:singleLine="true"
+                      android:gravity="center"
+                      android:text="05:00 pm"
+                      android:layout_marginLeft="@dimen/margin_20"
+                      android:textColor="@android:color/white"
+                      android:textSize="@dimen/text_size_20" />
+
+              </LinearLayout>
+
+
+
+              <TextView
+                  android:id="@+id/location_mon"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/rounded_green_fill_bg"
+                  android:padding="@dimen/margin_10"
+                  android:layout_marginBottom="@dimen/margin_10"
+                  android:singleLine="true"
+                  android:textColor="@android:color/white"
+                  android:textSize="@dimen/text_size_20" />
+
+          </LinearLayout>
+
+
+          <LinearLayout
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_margin="@dimen/margin_10"
+              android:padding="@dimen/margin_10"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <CheckBox
+                  android:id="@+id/tue_txt"
+                  android:layout_alignParentTop="true"
+                  android:textColor="@android:color/darker_gray"
+                  android:text="TUESDAY PATTERN"
+                  android:button="@null"
+                  android:checked="true"
+                  android:layout_width="wrap_content"
+                  android:drawableRight="@xml/custom_checkbox"
+                  android:drawablePadding="@dimen/margin_5"
+                  android:textSize="@dimen/text_size_20"
+                  android:layout_marginBottom="@dimen/margin_10"
+                  android:layout_height="wrap_content" />
+              <LinearLayout
+                  android:id="@+id/lay_tue"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+              <TextView
+                  android:id="@+id/starttime_tue"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="0.5"
+                  android:layout_marginRight="@dimen/margin_20"
+                  android:gravity="center"
+                  android:background="@drawable/rounded_green_fill_bg"
+                  android:padding="@dimen/margin_10"
+                  android:layout_marginBottom="@dimen/margin_10"
+                  android:singleLine="true"
+                  android:text="08:00 am"
+                  android:textColor="@android:color/white"
+                  android:textSize="@dimen/text_size_20" />
+
+              <TextView
+                  android:id="@+id/endtime_tue"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="0.5"
+                  android:layout_marginLeft="@dimen/margin_20"
+                  android:gravity="center"
+                  android:background="@drawable/rounded_green_fill_bg"
+                  android:padding="@dimen/margin_10"
+                  android:layout_marginBottom="@dimen/margin_10"
+                  android:singleLine="true"
+                  android:text="05:00 pm"
+                  android:textColor="@android:color/white"
+                  android:textSize="@dimen/text_size_20" />
+                  </LinearLayout>
+                      <TextView
+                          android:id="@+id/location_tue"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:background="@drawable/rounded_green_fill_bg"
+                          android:padding="@dimen/margin_10"
+                          android:layout_marginBottom="@dimen/margin_10"
+                          android:singleLine="true"
+                          android:textColor="@android:color/white"
+                          android:textSize="@dimen/text_size_20" />
+          </LinearLayout>
+
+
+          <LinearLayout
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_margin="@dimen/margin_10"
+              android:padding="@dimen/margin_10"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <CheckBox
+                  android:id="@+id/wed_txt"
+                  android:layout_alignParentTop="true"
+                  android:textColor="@android:color/darker_gray"
+                  android:text="WEDNESDAY PATTERN"
+                  android:button="@null"
+                  android:checked="true"
+                  android:layout_width="wrap_content"
+                  android:drawableRight="@xml/custom_checkbox"
+                  android:drawablePadding="@dimen/margin_5"
+                  android:textSize="@dimen/text_size_20"
+                  android:layout_marginBottom="@dimen/margin_10"
+                  android:layout_height="wrap_content" />
+              <LinearLayout
+                  android:id="@+id/lay_wed"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+                  <TextView
+                      android:id="@+id/starttime_wed"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.5"
+                      android:layout_marginRight="@dimen/margin_20"
+                      android:gravity="center"
+                      android:background="@drawable/rounded_green_fill_bg"
+                      android:padding="@dimen/margin_10"
+                      android:layout_marginBottom="@dimen/margin_10"
+                      android:singleLine="true"
+                      android:text="08:00 am"
+                      android:textColor="@android:color/white"
+                      android:textSize="@dimen/text_size_20" />
+
+                  <TextView
+                      android:id="@+id/endtime_wed"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.5"
+                      android:layout_marginLeft="@dimen/margin_20"
+                      android:gravity="center"
+                      android:background="@drawable/rounded_green_fill_bg"
+                      android:padding="@dimen/margin_10"
+                      android:layout_marginBottom="@dimen/margin_10"
+                      android:singleLine="true"
+                      android:text="05:00 pm"
+                      android:textColor="@android:color/white"
+                      android:textSize="@dimen/text_size_20" />
+              </LinearLayout>
+              <TextView
+                  android:id="@+id/location_wed"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/rounded_green_fill_bg"
+                  android:padding="@dimen/margin_10"
+                  android:layout_marginBottom="@dimen/margin_10"
+                  android:singleLine="true"
+                  android:textColor="@android:color/white"
+                  android:textSize="@dimen/text_size_20" />
+          </LinearLayout>
+
+
+          <LinearLayout
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_margin="@dimen/margin_10"
+              android:padding="@dimen/margin_10"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <CheckBox
+                  android:id="@+id/thu_txt"
+                  android:layout_alignParentTop="true"
+                  android:textColor="@android:color/darker_gray"
+                  android:text="THURSDAY PATTERN"
+                  android:button="@null"
+                  android:checked="true"
+                  android:layout_width="wrap_content"
+                  android:drawableRight="@xml/custom_checkbox"
+                  android:drawablePadding="@dimen/margin_5"
+                  android:textSize="@dimen/text_size_20"
+                  android:layout_marginBottom="@dimen/margin_10"
+                  android:layout_height="wrap_content" />
+              <LinearLayout
+                  android:id="@+id/lay_thu"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+                  <TextView
+                      android:id="@+id/starttime_thu"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.5"
+                      android:layout_marginRight="@dimen/margin_20"
+                      android:gravity="center"
+                      android:background="@drawable/rounded_green_fill_bg"
+                      android:padding="@dimen/margin_10"
+                      android:layout_marginBottom="@dimen/margin_10"
+                      android:singleLine="true"
+                      android:text="08:00 am"
+                      android:textColor="@android:color/white"
+                      android:textSize="@dimen/text_size_20" />
+
+                  <TextView
+                      android:id="@+id/endtime_thu"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.5"
+                      android:layout_marginLeft="@dimen/margin_20"
+                      android:gravity="center"
+                      android:background="@drawable/rounded_green_fill_bg"
+                      android:padding="@dimen/margin_10"
+                      android:layout_marginBottom="@dimen/margin_10"
+                      android:singleLine="true"
+                      android:text="05:00 pm"
+                      android:textColor="@android:color/white"
+                      android:textSize="@dimen/text_size_20" />
+              </LinearLayout>
+              <TextView
+                  android:id="@+id/location_thu"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/rounded_green_fill_bg"
+                  android:padding="@dimen/margin_10"
+                  android:layout_marginBottom="@dimen/margin_10"
+                  android:singleLine="true"
+                  android:textColor="@android:color/white"
+                  android:textSize="@dimen/text_size_20" />
+          </LinearLayout>
+
+
+          <LinearLayout
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_margin="@dimen/margin_10"
+              android:padding="@dimen/margin_10"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <CheckBox
+                  android:id="@+id/fri_txt"
+                  android:layout_alignParentTop="true"
+                  android:textColor="@android:color/darker_gray"
+                  android:text="FRIDAY PATTERN"
+                  android:button="@null"
+                  android:checked="true"
+                  android:layout_width="wrap_content"
+                  android:drawableRight="@xml/custom_checkbox"
+                  android:drawablePadding="@dimen/margin_5"
+                  android:textSize="@dimen/text_size_20"
+                  android:layout_marginBottom="@dimen/margin_10"
+                  android:layout_height="wrap_content" />
+              <LinearLayout
+                  android:id="@+id/lay_fri"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+                  <TextView
+                      android:id="@+id/starttime_fri"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.5"
+                      android:layout_marginRight="@dimen/margin_20"
+                      android:gravity="center"
+                      android:background="@drawable/rounded_green_fill_bg"
+                      android:padding="@dimen/margin_10"
+                      android:layout_marginBottom="@dimen/margin_10"
+                      android:singleLine="true"
+                      android:text="08:00 am"
+                      android:textColor="@android:color/white"
+                      android:textSize="@dimen/text_size_20" />
+
+                  <TextView
+                      android:id="@+id/endtime_fri"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.5"
+                      android:layout_marginLeft="@dimen/margin_20"
+                      android:gravity="center"
+                      android:background="@drawable/rounded_green_fill_bg"
+                      android:padding="@dimen/margin_10"
+                      android:layout_marginBottom="@dimen/margin_10"
+                      android:singleLine="true"
+                      android:text="05:00 pm"
+                      android:textColor="@android:color/white"
+                      android:textSize="@dimen/text_size_20" />
+              </LinearLayout>
+              <TextView
+                  android:id="@+id/location_fri"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/rounded_green_fill_bg"
+                  android:padding="@dimen/margin_10"
+                  android:layout_marginBottom="@dimen/margin_10"
+                  android:singleLine="true"
+                  android:textColor="@android:color/white"
+                  android:textSize="@dimen/text_size_20" />
+          </LinearLayout>
+
+
+          <LinearLayout
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_margin="@dimen/margin_10"
+              android:padding="@dimen/margin_10"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <CheckBox
+                  android:id="@+id/sat_txt"
+                  android:layout_alignParentTop="true"
+                  android:textColor="@android:color/darker_gray"
+                  android:text="SATURDAY PATTERN"
+                  android:button="@null"
+                  android:layout_width="wrap_content"
+                  android:checked="true"
+                  android:drawableRight="@xml/custom_checkbox"
+                  android:drawablePadding="@dimen/margin_5"
+                  android:textSize="@dimen/text_size_20"
+                  android:layout_marginBottom="@dimen/margin_10"
+                  android:layout_height="wrap_content" />
+              <LinearLayout
+                  android:id="@+id/lay_sat"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+                  <TextView
+                      android:id="@+id/starttime_sat"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.5"
+                      android:layout_marginRight="@dimen/margin_20"
+                      android:gravity="center"
+                      android:background="@drawable/rounded_green_fill_bg"
+                      android:padding="@dimen/margin_10"
+                      android:layout_marginBottom="@dimen/margin_10"
+                      android:singleLine="true"
+                      android:text="08:00 am"
+                      android:textColor="@android:color/white"
+                      android:textSize="@dimen/text_size_20" />
+
+                  <TextView
+                      android:id="@+id/endtime_sat"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.5"
+                      android:layout_marginLeft="@dimen/margin_20"
+                      android:gravity="center"
+                      android:background="@drawable/rounded_green_fill_bg"
+                      android:padding="@dimen/margin_10"
+                      android:layout_marginBottom="@dimen/margin_10"
+                      android:singleLine="true"
+                      android:text="05:00 pm"
+                      android:textColor="@android:color/white"
+                      android:textSize="@dimen/text_size_20" />
+              </LinearLayout>
+              <TextView
+                  android:id="@+id/location_sat"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/rounded_green_fill_bg"
+                  android:padding="@dimen/margin_10"
+                  android:layout_marginBottom="@dimen/margin_10"
+                  android:singleLine="true"
+                  android:textColor="@android:color/white"
+                  android:textSize="@dimen/text_size_20" />
+          </LinearLayout>
+
+
+          <LinearLayout
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_margin="@dimen/margin_10"
+              android:padding="@dimen/margin_10"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <CheckBox
+                  android:id="@+id/sun_txt"
+                  android:layout_alignParentTop="true"
+                  android:textColor="@android:color/darker_gray"
+                  android:text="SUNDAY PATTERN"
+                  android:button="@null"
+                  android:checked="true"
+                  android:layout_width="wrap_content"
+                  android:drawableRight="@xml/custom_checkbox"
+                  android:drawablePadding="@dimen/margin_5"
+                  android:textSize="@dimen/text_size_20"
+                  android:layout_marginBottom="@dimen/margin_10"
+                  android:layout_height="wrap_content" />
+              <LinearLayout
+                  android:id="@+id/lay_sun"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+                  <TextView
+                      android:id="@+id/starttime_sun"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.5"
+                      android:layout_marginRight="@dimen/margin_20"
+                      android:gravity="center"
+                      android:background="@drawable/rounded_green_fill_bg"
+                      android:padding="@dimen/margin_10"
+                      android:layout_marginBottom="@dimen/margin_10"
+                      android:singleLine="true"
+                      android:text="08:00 am"
+                      android:textColor="@android:color/white"
+                      android:textSize="@dimen/text_size_20" />
+
+                  <TextView
+                      android:id="@+id/endtime_sun"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.5"
+                      android:layout_marginLeft="@dimen/margin_20"
+                      android:gravity="center"
+                      android:background="@drawable/rounded_green_fill_bg"
+                      android:padding="@dimen/margin_10"
+                      android:layout_marginBottom="@dimen/margin_10"
+                      android:singleLine="true"
+                      android:text="05:00 pm"
+                      android:textColor="@android:color/white"
+                      android:textSize="@dimen/text_size_20" />
+              </LinearLayout>
+              <TextView
+                  android:id="@+id/location_sun"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/rounded_green_fill_bg"
+                  android:padding="@dimen/margin_10"
+                  android:layout_marginBottom="@dimen/margin_10"
+                  android:singleLine="true"
+                  android:textColor="@android:color/white"
+                  android:textSize="@dimen/text_size_20" />
+          </LinearLayout>
+
+          <LinearLayout
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_margin="@dimen/margin_10"
+              android:padding="@dimen/margin_10"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:id="@+id/tframe_txt"
+                  android:layout_alignParentTop="true"
+                  android:textColor="@color/bg_header"
+                  android:text="RECURRENCE"
+                  android:layout_width="match_parent"
+                  android:textSize="@dimen/text_size_20"
+                  android:layout_marginBottom="@dimen/margin_10"
+                  android:layout_height="wrap_content" />
+
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+
+                  <TextView
+                      android:id="@+id/fmdate_frame"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.5"
+                      android:layout_marginRight="@dimen/margin_20"
+                      android:gravity="center"
+                      android:background="@drawable/rounded_green_fill_bg"
+                      android:padding="@dimen/margin_10"
+                      android:layout_marginBottom="@dimen/margin_10"
+                      android:singleLine="true"
+                      android:textColor="@android:color/white"
+                      android:textSize="@dimen/text_size_20" />
+
+                  <TextView
+                      android:id="@+id/todate_frame"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.5"
+                      android:layout_marginLeft="@dimen/margin_20"
+                      android:gravity="center"
+                      android:background="@drawable/rounded_green_fill_bg"
+                      android:padding="@dimen/margin_10"
+                      android:layout_marginBottom="@dimen/margin_10"
+                      android:singleLine="true"
+                      android:textColor="@android:color/white"
+                      android:textSize="@dimen/text_size_20" />
+
+              </LinearLayout>
+
+
+
+
+
+
+          </LinearLayout>
+
+      </LinearLayout>
+
+  </ScrollView>
+
+</FrameLayout>

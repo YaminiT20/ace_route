@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#34495f"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/linear_add_species"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/searchboundary" 
+        android:paddingBottom="3dp">
+		
+        <EditText
+            android:id="@+id/searchbox_add_species"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:paddingLeft="14dp"
+            android:singleLine="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:textColor="#34495f"
+            android:paddingRight="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/searchbox_add_species"            
+            android:textCursorDrawable="@null"
+            />
+
+        	<ImageView
+        	    android:id="@+id/searchbox_searchimg_add_species"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:layout_alignParentRight="true"
+        	    android:layout_alignTop="@+id/searchbox_add_species"
+        	    android:background="@drawable/searchicon_grey" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear_add_species"
+        android:background="#edeff2"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/list_view_add_species"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

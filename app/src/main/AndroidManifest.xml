@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aceroute.mobile.software">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" /> <!-- <uses-permission android:name="android.permission.SEND_SMS" /> -->
+
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACTION_MANAGE_OVERLAY_PERMISSION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- <uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW"/> -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> <!-- <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" /> <!-- <uses-permission android:name="android.permission.WRITE_SETTINGS" /> -->
+    <!-- <uses-feature android:glEsVersion="0x00010001" android:required="true" /> -->
+    <!-- <uses-sdk tools:overrideLibrary="com.github.bkhezry.mapdrawingtools" /> -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" /> <!-- Map permissions -->
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="com.aceroute.mobile.aceroute.permission.MAPS_RECEIVE" />
+
+    <permission
+        android:name="com.aceroute.mobile.software.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name="androidx.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/iconblue"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:exported="false"
+            android:name="com.aceroute.mobile.software.fragment.ImaveViewer" />
+        <activity android:exported="false" android:name="com.aceroute.mobile.software.CoreActivity" /> <!-- YD very important for google map -->
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name="com.aceroute.mobile.software.SplashII"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+     android:theme="@android:style/Theme.Holo.NoActionBar"
+            android:theme="@style/AppTheme.NoActionBar"
+        -->
+        <activity
+            android:name="com.aceroute.mobile.software.AppLoginPage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aceroute.mobile.software.camera.ViewImage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aceroute.mobile.software.BaseTabActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.Light"
+            android:windowSoftInputMode="adjustResize|stateHidden" /> <!-- android:windowSoftInputMode="stateVisible|adjustPan" -->
+        <activity
+            android:name="com.ipaulpro.afilechooser.FileChooserActivity"
+            android:enabled="@bool/use_activity"
+            android:exported="false"
+            android:icon="@drawable/ic_chooser"
+            android:label="@string/choose_file">
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.aceroute.mobile.software.AceRouteService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name="com.aceroute.mobile.software.ServiceFloating"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name="com.aceroute.mobile.software.utilities.UpdateLocationService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:stopWithTask="true" /> <!-- <service android:name=".AceRouteJobService" android:permission="android.permission.BIND_JOB_SERVICE"/> -->
+        <receiver android:exported="false" android:name="com.aceroute.mobile.software.AceRouteBroadcast">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.aceroute.mobile.action.heartbeat_broadcast" />
+                <action android:name="com.aceroute.mobile.action.geosync_broadcast" />
+                <action android:name="com.aceroute.mobile.aceroute.action.geosync_broadcast_TEST" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" /> <!-- android:value="AIzaSyDc3nM68a4Whh_zqJzMSsmnIlzqwVeFvMs"   YD -->
+        <!-- For production use    AIzaSyCiDFGdrhcFkT4TqL8O3yy9jhaSaVG3UzU -->
+        <!--
+              <meta-data
+             android:name="com.google.android.maps.v2.API_KEY"
+			 android:value="AIzaSyDutd_YZsDNyaG7cUfIfsYQg_277LpdtUk" />
+        -->
+        <meta-data
+            android:name="enableDebugKit"
+            android:value="false" /> <!-- Google map key -->
+        <!-- For non-production use -->
+        <!-- <meta-data -->
+        <!-- Previous Enable key -->
+        <!-- android:name="com.google.android.maps.v2.API_KEY" -->
+        <!-- android:value="AIzaSyB2zQLRWsUoFEJPJZuG3j4HhCsNlUHziz8" /> -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBEfghVDiDqUu2WgFmbDovafENRA2lMObQ" />
+        <!--
+            <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="fbfad1bd0b29724e7ef3c2863c0231ee0a5cfeee" /> old from yash acc
+        -->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="cf8879a705d312a5057df08a03e7023ceb0581b3" />
+
+        <activity
+            android:name="com.aceroute.mobile.software.TeritorryActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Design.Light.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity android:name=".fragment.SimpleScannerActivity" />
+
+        <provider
+            android:exported="false"
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+
+        </provider>
+        <meta-data
+            android:name="com.bugsnag.android.API_KEY"
+            android:value="69d8fc80ec27d90607b7e05ce8e76aec"/>
+
+    </application>
+
+</manifest>

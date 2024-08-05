@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_8">
+    <!-- Defining where should text be placed. You set you text color here-->
+    <TextView
+        android:id="@+id/list_content_form"
+        android:textColor="@color/light_gray"
+        android:layout_margin="0dip"
+        android:textSize="@dimen/text_size_20"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:includeFontPadding="false"/>
+</LinearLayout>

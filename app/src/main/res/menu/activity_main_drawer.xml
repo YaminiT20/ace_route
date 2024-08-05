@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/grp0" android:checkableBehavior="none">
+        <item
+            android:id="@+id/drawer_message"
+            android:icon="@drawable/font"
+            android:title="Message" />
+        <!--android:icon="@drawable/ic_menu_camera"-->
+
+    </group>
+
+<!--    <group android:id="@+id/grp1" android:checkableBehavior="none">-->
+<!--        <item-->
+<!--            android:id="@+id/drawer_addOrder"-->
+<!--            android:icon="@drawable/plus_drawer"-->
+<!--            android:title="Add Order" />-->
+<!--            &lt;!&ndash;android:icon="@drawable/ic_menu_camera"&ndash;&gt;-->
+
+<!--    </group>-->
+
+    <group android:id="@+id/grp2" android:checkableBehavior="none">
+        <item
+            android:id="@+id/manage_shift"
+            android:icon="@drawable/calendar_icon"
+            android:title="Shift Manager" />
+
+    </group>
+
+
+    <group android:id="@+id/grp3" android:checkableBehavior="none">
+        <item
+            android:id="@+id/drawer_password"
+            android:icon="@drawable/lock"
+            android:title="Setup Passcode" />
+        <item
+            android:id="@+id/drawer_fontsize"
+            android:icon="@drawable/font"
+            android:title="Setup Font Size" />
+            <!--android:icon="@drawable/ic_menu_gallery"-->
+       <!-- <item
+            android:id="@+id/drawer_offline_map"
+            android:icon="@drawable/map_drawer"
+            android:title="Setup Offline Map" />-->
+           <!-- android:icon="@drawable/ic_menu_slideshow"-->
+
+        <item
+            android:id="@+id/drawer_route_date"
+            android:icon="@drawable/calendar_icon"
+            android:title="Setup Route Date" />
+           <!-- android:icon="@drawable/ic_menu_manage"-->
+
+           <!-- android:icon="@drawable/ic_menu_manage"-->
+    </group>
+
+    <group android:id="@+id/grp4" android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_to_start"
+            android:icon="@drawable/map_drawer"
+            android:title="Nav to Start" />
+
+        <item
+            android:id="@+id/drawer_about"
+            android:icon="@drawable/home_drawer"
+            android:title="About" />
+        <!--android:icon="@drawable/ic_menu_camera"-->
+
+    </group>
+
+   <!-- <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:title="Share" />
+                &lt;!&ndash;android:icon="@drawable/ic_menu_share"&ndash;&gt;
+            <item
+                android:id="@+id/nav_send"
+                android:title="Send" />
+                &lt;!&ndash;android:icon="@drawable/ic_menu_send"&ndash;&gt;
+        </menu>
+    </item>-->
+
+</menu>

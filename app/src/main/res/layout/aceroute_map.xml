@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerListActivity" >
+ 	<RelativeLayout
+        android:id="@+id/map_back_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#34495f" >
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/button"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true" />
+        
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >            
+
+        <TextView
+            android:id="@+id/tv_map_header_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginTop="6.5dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="19.20sp" />
+
+        <TextView
+            android:id="@+id/tv_map_header_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_map_header_day"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF" />
+            
+        </RelativeLayout>
+        
+    </RelativeLayout> 
+
+    <fragment
+        android:id="@+id/fr_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/map_back_layout"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+
+</RelativeLayout>

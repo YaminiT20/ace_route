@@ -1,0 +1,288 @@
+{
+  "activitylist":[
+			          {
+			            "name": "AppSignupActivity",
+			            "controls":[
+			            	{
+			                    "control_id": "signup_name",
+			                    "mandatory": "yes",
+			                    "type": "editText",
+			                    "Validate":"Empty",
+			                    "errorMsg":"Please enter name."
+			                },
+			                {
+			                    "control_id": "signup_name",
+			                    "mandatory": "yes",
+			                    "min_length": "3",
+			                    "max_length": "12",
+			                    "type": "editText",
+			                    "Validate":"Min-Max",
+			                    "errorMsg":"signup_name length should be 3-12."
+			                },
+			                {
+			                    "control_id": "signup_password",
+			                    "mandatory": "yes",
+			                    "type": "editText",
+			                    "Validate":"Empty",
+			                    "errorMsg":"Please Enter password."
+			                },
+			                {
+			                    "control_id": "signup_password",
+			                    "mandatory": "yes",
+			                    "min_length": "4",
+			                    "max_length": "15",
+			                    "type": "editText",
+			                    "Validate":"Min-Max",
+			                    "errorMsg":"signup_password length should be 4-15."
+			                },
+			                {
+			                    "control_id": "signup_email",
+			                    "mandatory": "yes",
+			                    "type": "editText",
+			                    "Validate":"Empty",
+			                    "errorMsg":"Please Enter email."
+			                },
+			                {
+			                    "control_id": "signup_email",
+			                    "mandatory": "yes",
+			                    "min_length": "4",
+			                    "max_length": "25",
+			                    "type": "editText",
+			                    "Validate":"Min-Max",
+			                    "errorMsg":"Email length should be above 4"
+			                },
+			                {
+			                    "control_id": "signup_email",
+			                    "mandatory": "yes",
+			                    "min_length": "1",
+			                    "max_length": "100",
+			                    "type": "editText",
+			                    "Validate":"EMail",
+			                    "errorMsg":"Email format is not correct."
+			                },
+			                {
+			                    "control_id": "signup_number",
+			                    "mandatory": "yes",
+			                    "type": "editText",
+			                    "Validate":"Empty",
+			                    "errorMsg":"Please Enter Contact No."
+			                },
+			                {
+			                    "control_id": "signup_number",
+			                    "mandatory": "yes",
+			                    "min_length": "9",
+			                    "max_length": "11",
+			                    "type": "editText",
+			                    "Validate":"Min-Max",
+			                    "errorMsg":"Number length should be 9-11."
+			                },
+			                {
+			                    "control_id": "signup_number",
+			                    "mandatory": "yes",
+			                    "type": "editText",
+			                    "Validate":"Integer",
+			                    "errorMsg":"signup_number should be Integer."
+			                },
+			                {
+			                    "control_id": "signup_zipcode",
+			                    "mandatory": "yes",
+			                    "type": "editText",
+			                    "Validate":"Empty",
+			                    "errorMsg":"Please Enter Zip-Code."
+			                },
+			                {
+			                    "control_id": "signup_zipcode",
+			                    "mandatory": "yes",
+			                    "type": "editText",
+			                    "Validate":"Integer",
+			                    "errorMsg":"Zip-Code should be Integer."
+			                }
+			            ]
+			        },			       
+			        {
+			            "name": "UserProfile",
+			            "controls":[
+			                {
+			                    "control_id": "edt_upname",
+			                    "mandatory": "yes",
+			                    "min_length": "3",
+			                    "max_length": "12",
+			                    "type": "editText",
+			                    "Validate":"Min-Max",
+			                    "errorMsg":"signup_name length should be 3-12"
+			                },
+			                {
+			                    "control_id": "edt_uppass",
+			                    "mandatory": "yes",
+			                    "min_length": "4",
+			                    "max_length": "15",
+			                    "type": "editText",
+			                    "Validate":"Min-Max",
+			                    "errorMsg":"signup_password length should be 4-15"
+			                },
+			                {
+			                    "control_id": "edt_upemail",
+			                    "mandatory": "yes",
+			                    "min_length": "4",
+			                    "max_length": "25",
+			                    "type": "editText",
+			                    "Validate":"Min-Max",
+			                    "errorMsg":"Email length should be above 4"
+			                },
+			                {
+			                    "control_id": "edt_upcontact",
+			                    "mandatory": "yes",
+			                    "min_length": "9",
+			                    "max_length": "11",
+			                    "type": "editText",
+			                    "Validate":"Min-Max",
+			                    "errorMsg":"Number length should be 9-11"
+			                },
+			                {
+			                    "control_id": "edt_upemail",
+			                    "mandatory": "yes",
+			                    "min_length": "1",
+			                    "max_length": "100",
+			                    "type": "editText",
+			                    "Validate":"EMail",
+			                    "errorMsg":"Email format is not correct."
+			                },
+			                {
+			                    "control_id": "edt_upcontact",
+			                    "mandatory": "yes",
+			                    "type": "editText",
+			                    "Validate":"Integer",
+			                    "errorMsg":"signup_number should be Integer."
+			                },
+			                {
+			                    "control_id": "edt_upzip",
+			                    "mandatory": "yes",
+			                    "type": "editText",
+			                    "Validate":"Integer",
+			                    "errorMsg":"Zip-Code should be Integer."
+			                }
+			            ]
+			        },
+			           {
+			            "name": "AppLoginPage",
+			            "controls":[
+			                {
+			                    "control_id": "companyId_Et",
+			                    "mandatory": "yes",
+			                    "type": "editText",
+			                    "Validate":"Empty",
+			                    "errorMsg":"Please enter account name"
+			                },
+			                {
+			                    "control_id": "resId_Et",
+			                    "mandatory": "yes",
+			                    "type": "editText",
+			                    "Validate":"Empty",
+			                    "errorMsg":"Please enter worker id"
+			                },
+			                {
+			                    "control_id": "passCode_Et",
+			                    "mandatory": "yes",
+			                    "type": "editText",
+			                    "Validate":"Empty",
+			                    "errorMsg":"Please enter passcode"
+			                }
+			            ]
+			        },
+			        {
+			        	"name": "CreateOrderFragment",
+			            "controls":[
+			            	  {
+			                    "control_id": "odr_nm_edt",
+			                    "mandatory": "yes",
+			                    "type": "editText",
+			                    "Validate":"Empty",
+			                    "errorMsg":"Please enter order name"
+			                },			              
+			                {
+			                    "control_id": "odr_nm_edt",
+			                    "mandatory": "yes",
+			                    "min_length": "2",
+			                    "max_length": "50",
+			                    "type": "editText",
+			                    "Validate":"Min-Max",
+			                    "errorMsg":"Order name must be between 2 to 15 characters long"
+			                },
+			                {
+			                    "control_id": "odr_location_edt",
+			                    "mandatory": "yes",
+			                    "type": "editText",
+			                    "Validate":"Empty",
+			                    "errorMsg":"Customer name not valid\nCustomer location not valid"
+			                }			                
+			            ]
+			        },
+			        {
+			        	"name": "AddEditTaskOrderFragment",
+			            "controls":[
+			            	  {
+			                    "control_id": "odr_tree_crew_type",
+			                    "mandatory": "yes",
+			                    "type": "editText",
+			                    "Validate":"Empty",
+			                    "errorMsg":"Please select Tree Crew Type"
+			                },			                
+			            ]
+			        },
+			        {
+			        	"name": "EditContactFrag_Contact",
+			            "controls":[
+			            	  {
+			                    "control_id": "edt_contact_name_edcontact",
+			                    "mandatory": "yes",
+			                    "type": "editText",
+			                    "Validate":"Empty",
+			                    "errorMsg":"Please Enter Name"
+			                },{
+                                "control_id": "edt_contact_name_edcontact",
+                                "mandatory": "yes",
+                                "min_length": "5",
+                                "max_length": "51",
+                                "type": "editText",
+                                "Validate":"Min-Max",
+                                "errorMsg":"Name must be atleast 5 characters long"
+                            }
+			            ]
+			        },
+			        {
+			        	"name": "EditContactFrag_Location",
+			            "controls":[
+			            	  {
+			                    "control_id": "edt_contact_name_edcontact",
+			                    "mandatory": "yes",
+			                    "type": "editText",
+			                    "Validate":"Empty",
+			                    "errorMsg":"Please Enter Name"
+			                },{
+                                "control_id": "edt_contact_name_edcontact",
+                                "mandatory": "yes",
+                                "min_length": "5",
+                                "max_length": "200",
+                                "type": "editText",
+                                "Validate":"Min-Max",
+                                "errorMsg":"Name must be atleast 5 characters long"
+                            },{
+                                "control_id": "edt_contact_phone_edcontact",
+                                "mandatory": "yes",
+                                "type": "editText",
+                                "Validate":"Empty",
+                                "errorMsg":"Please Enter Address"
+                            },{
+                                "control_id": "edt_contact_phone_edcontact",
+                                "mandatory": "yes",
+                                "min_length": "5",
+                                "max_length": "201",
+                                "type": "editText",
+                                "Validate":"Min-Max",
+                                "errorMsg":"Address must be atleast 5 characters long"
+                            }
+			            ]
+			        }
+       
+    ]
+}

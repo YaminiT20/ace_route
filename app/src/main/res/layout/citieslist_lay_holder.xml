@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="45dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="0.7dp"
+        android:background="#ffffff" >
+
+    <TextView
+        android:id="@+id/textView_curdownstate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/TV_1"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#4c4c4e"
+        android:text="skhdkshdkh"
+        android:paddingLeft="4dp"
+        android:textSize="18sp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btw_download"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@layout/custom_download_btn"
+            android:text="Download"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+
+</LinearLayout>

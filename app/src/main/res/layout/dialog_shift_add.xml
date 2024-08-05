@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:background="@color/color_blue_dark"
+        android:id="@+id/top_di_control"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_15"
+            android:src="@drawable/back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:layout_marginLeft="5dp"
+            android:textColor="#fff"
+            android:text="Shift/Unavailable Hours"
+            android:id="@+id/textView" />
+
+        <ImageView
+            android:id="@+id/add_shift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/page_add"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+
+
+    <com.fortysevendeg.swipelistview.SwipeListView
+        android:id="@+id/shift_material_lstvw"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/divier_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5.0sp"
+        android:listSelector="@null"
+        android:paddingTop="@dimen/margin_5"
+        swipe:swipeBackView="@+id/back_shift"
+        swipe:swipeFrontView="@+id/front_shift"
+        swipe:swipeCloseAllItemsWhenMoveList="true"
+        swipe:swipeMode="both" />
+
+    <View
+        android:id="@+id/divier_lay"
+        android:layout_above="@+id/di_btn"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey_options_group"
+        />
+
+    <LinearLayout
+        android:id="@+id/di_btn"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/_di_btn_cancel"
+            android:padding="15dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"/>
+        <TextView
+            android:visibility="gone"
+            android:layout_marginLeft="1px"
+            android:background="#9b9b9b"
+            android:textColor="#fff"
+            android:id="@+id/_di_btn_ok"
+            android:layout_weight="0.5"
+            android:padding="15dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ok"/>
+    </LinearLayout>
+
+</RelativeLayout>

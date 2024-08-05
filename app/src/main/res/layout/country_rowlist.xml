@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+   >
+   
+  <LinearLayout  android:layout_height="47dp"
+      android:layout_width="match_parent"
+      android:layout_marginLeft="2dp"
+      android:layout_marginRight="2dp"
+      android:orientation="horizontal"
+      android:layout_marginBottom="0.7dp"
+      android:background="#ffffff" 
+      android:weightSum="5">
+    <LinearLayout 
+        android:layout_height="45dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="0.7dp"
+        android:background="#ffffff"
+        android:layout_weight="1">
+
+    <TextView
+        android:id="@+id/textView_ctry_city_nm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#4c4c4e"
+        android:paddingLeft="4dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView_cid_ctry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/textView_custypnm_ctry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:visibility="gone"
+        />
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_height="45dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="0.7dp"
+        android:gravity="right"
+        android:background="#ffffff"
+        android:layout_weight="4">
+        
+        <ImageView 
+        android:id="@+id/ctry_cty_selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/checkctry"
+		android:visibility="gone"
+		
+		/>
+    </LinearLayout>
+   </LinearLayout>
+</LinearLayout>

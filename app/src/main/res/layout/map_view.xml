@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerListActivity" >
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/gmap_fr_map"
+        android:name="com.testing.svma.MainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.MapView" />
+
+    <FrameLayout
+        android:id="@+id/fragment_wrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <!--
+         <Button
+        android:id="@+id/btnMapSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button_map_selector"
+        android:padding="10dp"
+        android:paddingRight="10dp" />
+    -->
+
+    <RelativeLayout
+        android:id="@+id/bottom_show"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#34495f"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/btnLogwayPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"
+                android:background="@drawable/btn_logwaypoint_selector"
+                android:paddingLeft="@dimen/margin_15"
+                android:paddingRight="@dimen/margin_15"
+                android:text="@string/lbl_waypoint"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_18"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnSaveChanges"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_toRightOf="@+id/btnLogwayPoint"
+                android:layout_weight="1"
+                android:background="@drawable/btn_logwaypoint_selector"
+                android:enabled="false"
+                android:paddingLeft="@dimen/margin_15"
+                android:paddingRight="@dimen/margin_15"
+                android:text="@string/lbl_save_changes"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_18"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <WebView
+       android:id="@+id/webviewMapFragGoogle"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerVertical="true"
+       android:layout_centerHorizontal="true"     
+       android:visibility="gone"
+       android:scrollbars="none"/>
+</RelativeLayout>

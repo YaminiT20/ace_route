@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:padding="5dip" >
+
+
+    <!--  <TextView
+         android:id="@+id/text_title_dpopup"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="6.5dp"
+         android:gravity="center"
+         android:textSize="17.65dp"
+         android:text="SLIGHT PROBLEM WITH DATA"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#A94751"
+         /> -->
+
+
+    <TextView
+        android:id="@+id/text_mesg_popup_abt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_12"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginBottom="@dimen/margin_15"
+        android:text=""
+        android:textColor="@color/light_gray"
+        android:textSize="@dimen/text_size_22"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/refreshbtn_abt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_22"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_below="@+id/text_mesg_popup_abt"
+        android:layout_marginBottom="@dimen/margin_15"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginRight="@dimen/margin_5"
+        android:background="@color/color_dark_red"
+        android:text="Refresh All Data"/>
+
+    <View
+        android:id="@+id/line_id_abt"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/refreshbtn_abt"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@color/color_dark_grey"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/line_id_abt"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <!--Button
+            android:id="@+id/butt_yes_abt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_light_blue"
+            android:text="Cancel"
+            android:textStyle="normal"
+            android:textColor="@color/bg_header"
+            android:textSize="@dimen/text_size_20"
+            android:visibility="gone"  />-->
+
+        <Button
+            android:id="@+id/butt_ok_abt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_light_blue"
+            android:text="OK"
+            android:textStyle="normal"
+            android:textColor="@color/bg_header"
+            android:textSize="@dimen/text_size_20"
+            android:visibility="visible" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/row_white_bg"
+     >
+
+    <RelativeLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:tag="back" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/bdr_green" >
+
+            <TextView
+                android:id="@+id/back_view_invite_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:padding="@dimen/margin_15"
+                android:drawableLeft="@drawable/row_edit"
+                android:gravity="center|left"
+                android:text="  Edit"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_20" />
+
+            <!--YD this is the dummy text box just to increase the size of the swipe which is in background-->
+            <TextView
+                android:id="@+id/back_view_dummy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_22"
+                android:layout_below="@+id/back_view_invite_textview"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/color_red" >
+
+            <TextView
+                android:id="@+id/back_view_chat_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_20"
+                android:padding="@dimen/margin_14"
+                android:drawableRight="@drawable/row_delete"
+                android:gravity="center|right"
+                android:text="Delete  "
+                android:textColor="@color/color_white" 
+                android:textSize="@dimen/text_size_20"/>
+            <TextView
+                android:id="@+id/back_view_dummy1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_22"
+                android:layout_below="@+id/back_view_chat_textview"/>
+            
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/front"
+        style="@style/MyListFrontContent"
+        android:orientation="vertical"
+        android:tag="front" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/row_white_bg"
+            android:padding="@dimen/margin_10"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/row_white_bg"
+                android:padding="@dimen/margin_5"
+                android:layout_weight="4.5"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/order_part_pname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="dddd"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/medium_gray"
+                    android:textSize="@dimen/text_size_22"
+                    android:includeFontPadding="false"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/order_part_dtl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="fg"
+                    android:textColor="@color/color_dark_green"
+                    android:textSize="@dimen/text_size_22"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/order_part_barcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="dddd"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/medium_gray"
+                    android:textSize="@dimen/text_size_22"
+                    android:includeFontPadding="false"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/order_part_pquantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_50"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

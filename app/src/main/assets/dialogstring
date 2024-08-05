@@ -1,0 +1,87 @@
+{
+    "appstrand": [
+        {
+            "id": "0",
+            "lang": "english",
+            "val": [
+                {
+                    "id": 0,
+                    "sn": "Choose image options."
+                },
+                {
+                    "id": 1,
+                    "sn": "ADD PICTURE"
+                },
+                {
+                    "id": 2,
+                    "sn": "Delete Confirmation."
+                },
+                {
+                    "id": 3,
+                    "sn": "JOB NOTES"
+                },
+                {
+                    "id": 4,
+                    "sn": "ADD SIGNATURE"
+                },
+                {
+                    "id": 5,
+                    "sn": "Add Site."
+                },
+                {
+                    "id": 6,
+                    "sn": "Data not filled correctly."
+                },
+                {
+                    "id": 7,
+                    "sn": "Address"
+                },
+                {
+                    "id": 8,
+                    "sn": "ADD PARTS"
+                },
+                {
+                    "id": 9,
+                    "sn": "Select camera."
+                },
+                {
+                    "id": 10,
+                    "sn": "Slight problem with data."
+                },
+                {
+                    "id": 11,
+                    "sn": "Please enter description of Picture."
+                },
+                {
+                    "id": 12,
+                    "sn": "OK"
+                },
+                {
+                    "id": 13,
+                    "sn": "NAME"
+                },
+                {
+                    "id": 14,
+                    "sn": "Yes"
+                },
+                {
+                    "id": 15,
+                    "sn": "Would you like to Delete."
+                },
+                {
+                    "id": 16,
+                    "sn": "ADDRESS"
+                },
+                {
+                    "id": 17,
+                    "sn": "Select from gallery."
+                },
+                {
+                    "id": 18,
+                    "sn": "Please add signature."
+                }
+
+            ]
+        }
+	]
+}

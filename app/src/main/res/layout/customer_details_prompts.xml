@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_white_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_5"
+        android:background="@drawable/rounded_white_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5"
+            android:text="@string/lbl_dlg_contact_name"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/text_size_20" />
+
+        <EditText
+            android:id="@+id/edt_contact_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_40"
+            android:layout_margin="@dimen/margin_5"
+            android:background="@drawable/roundable_edittext"
+            android:textColor="@android:color/black"            
+            android:padding="@dimen/margin_5"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_20"            
+            android:textCursorDrawable="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyt_site_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_5"
+        android:background="@drawable/rounded_white_bg"
+        android:orientation="vertical" 
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txt_site_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5"
+            android:text="@string/lbl_dlg_description"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/text_size_20" />
+
+        <EditText
+            android:id="@+id/edt_site_description"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_40"
+            android:layout_margin="@dimen/margin_5"
+            android:background="@drawable/roundable_edittext"
+            android:textColor="@android:color/black"            
+            android:padding="@dimen/margin_5"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_20"            
+            android:textCursorDrawable="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_5"
+        android:background="@drawable/rounded_white_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_name_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5"
+            android:text="@string/lbl_dlg_contact_phone"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/text_size_20" />
+
+        <EditText
+            android:id="@+id/edt_contact_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_40"
+            android:layout_margin="@dimen/margin_5"
+            android:background="@drawable/roundable_edittext"
+            android:textColor="@android:color/black"
+            android:padding="@dimen/margin_5"
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/text_size_20"            
+            android:textCursorDrawable="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cust_detail_adrr2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_5"
+        android:background="@drawable/rounded_white_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_name_address2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5"
+            android:text="@string/lbl_dlg_address2"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/text_size_20" />
+
+        <EditText
+            android:id="@+id/edt_contact_phone2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_40"
+            android:layout_margin="@dimen/margin_5"
+            android:background="@drawable/roundable_edittext"
+            android:textColor="@android:color/black"
+            android:padding="@dimen/margin_5"
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/text_size_20"
+            android:textCursorDrawable="@null" />
+    </LinearLayout>
+
+     <LinearLayout
+        android:id="@+id/lyt_phoneType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_5"
+        android:background="@drawable/rounded_white_bg"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5"
+            android:text="@string/lbl_dlg_contact_phone_type"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/text_size_20" />
+
+        <TextView
+            android:id="@+id/phone_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5"
+            android:background="@drawable/rounded_green_fill_bg"
+            android:padding="@dimen/margin_10"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_20" />
+    </LinearLayout>
+</LinearLayout>

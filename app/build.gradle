@@ -1,0 +1,156 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        //classpath 'io.fabric.tools:gradle:1.26.1'
+        classpath 'io.fabric.tools:gradle:1.28.0'
+    }
+}
+
+
+apply plugin: 'com.android.application'
+apply plugin: "com.bugsnag.android.gradle"
+//apply plugin: 'io.fabric'   //YD 2020
+//apply plugin: 'com.splunk.mint.gradlbasee.android.plugin'
+
+repositories {
+    maven { //url 'https://maven.fabric.io/public'  //YD 2020
+        url uri('mint-plugin-repo-5.2.5')//YD 2020 check the app folder to have better understanding on this line.
+    }
+}
+
+android {
+
+    /*signingConfigs {
+        config {
+            storeFile file('C:\\xelium\\aceroutekey/AceRoute.jks')
+            storePassword 'aceroute'
+            keyAlias 'key0'
+            keyPassword 'aceroute'
+        }
+        newconfig {
+            storeFile file('C:\\xelium\\aceroutekey/AceRoute.jks')
+            storePassword 'aceroute'
+            keyAlias 'key0'
+            keyPassword 'aceroute'
+        }
+    }*/
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    compileSdkVersion 33
+    // buildToolsVersion '26.0.3'
+    buildToolsVersion '29.0.2'
+    aaptOptions {
+        cruncherEnabled = false
+    }
+    defaultConfig {
+        applicationId "com.aceroute.mobile.software"
+        minSdkVersion 20
+        targetSdkVersion 33
+        versionCode 30
+        versionName "2.18"
+        multiDexEnabled true
+        ndk.abiFilters 'armeabi-v7a','arm64-v8a','x86','x86_64'
+        //signingConfig signingConfigs.newconfig
+        //2.5 == 4 versionCode
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+          //  signingConfig signingConfigs.newconfig
+        }
+        debug {
+            // signingConfig signingConfigs.newconfig
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LGPL2.1'
+        //YD add for Removing duplication of jar in : com.esri.arcgis.android\arcgis-android\10.2.7\jars\libs\jackson-mapper-1.9.5.jar AND com.esri.arcgis.android\arcgis-android\10.2.7\jars\libs\jackson-core-1.9.5.jar
+    }
+    sourceSets {
+        main {
+            assets.srcDirs = ['src/main/assets', 'src/main/assets/2']
+            jni.srcDirs = []
+        }
+    }
+
+    dexOptions {  // added this because app was giving error: "finished with non-zero exit value 3"
+        javaMaxHeapSize "4g"
+    }
+    useLibrary 'org.apache.http.legacy'
+
+
+    configurations.all {
+        resolutionStrategy.force 'com.android.support:multidex:1.0.3'
+    }
+}
+
+dependencies {
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation project(':swipelistview')
+    implementation project(':logging')
+    implementation project(':google-play-services_lib')
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'me.dm7.barcodescanner:zxing:1.9.13'
+    implementation files('libs/json-simple-1.1 (1).jar')
+    implementation 'com.pubnub:pubnub-gson:4.18.0'
+    implementation files('libs/httpcore-4.3.2.jar')
+    implementation files('libs/httpmime-4.3.jar')
+    implementation files('libs/httpclient-4.2.3.jar')
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.12'
+    //  implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    //  implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'joda-time:joda-time:2.9.4'
+    implementation files('libs/universal-image-loader-1.9.5.jar')
+    implementation project(':aFileChooser')
+//    debugCompile 'com.amitshekhar.android:debug-db:1.0.4'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'androidx.preference:preference:1.1.1'
+    implementation "androidx.fragment:fragment:1.2.5"
+
+////    // Recommended: Add the Firebase SDK for Google Analytics.
+//    implementation 'com.google.firebase:firebase-analytics:17.2.2'
+////
+////    // Add the Firebase SDK for Crashlytics.
+//    implementation 'com.google.firebase:firebase-crashlytics:17.0.0'
+
+//    implementation 'com.google.firebase:firebase-crashlytics:17.1.1'
+//    implementation 'com.google.firebase:firebase-analytics:17.4.4'
+//    compile('com.crashlytics.sdk.android:crashlytics:2.9.6@aar') {  //YD 2020
+//        transitive = true;
+//    }
+
+//    implementation(platform("com.google.firebase:firebase-bom:32.2.2"))
+//    implementation ('com.google.firebase:firebase-crashlytics') {
+//        exclude group: 'com.google.android.gms', module : 'play-services-ads-identifier'
+//    }
+//    implementation ('com.google.firebase:firebase-analytics') {
+//        exclude group: 'com.google.android.gms', module : 'play-services-ads-identifier'
+//    }
+
+    implementation "com.bugsnag:bugsnag-android:5.+"
+    compile files('libs/osmdroid-android-4.0.jar')
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'com.splunk:mint-android-sdk:5.2.5'
+    implementation 'androidx.work:work-runtime-ktx:2.7.1'
+    //compile 'com.google.android.gms:play-services-location:11.0.0' // YD 2020 for future update to use Fused loction (more accurate and works in background (tested))
+    //com.google.android.gms:play-services //YD 2020 for future update after deleting the google play service library for updated version of play service
+}

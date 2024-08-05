@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical" 
+    android:background="#edeff2">
+
+    <!-- <RelativeLayout
+        android:id="@+id/map_back_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#34495f" >
+          <RelativeLayout
+        android:id="@+id/Bck_button_sign"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:background="#34495f" >
+
+        <ImageView
+            android:id="@+id/back_button_edtpic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:padding="5dp"
+            android:src="@drawable/button" />
+
+        </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/save"
+               android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.5dp"
+                android:background="@drawable/done_btns"
+                android:textSize="12sp"/>
+        
+    </RelativeLayout> -->
+
+    <!-- <RelativeLayout
+        android:id="@+id/rll_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/map_back_layout" >
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#ffffff" />
+    </RelativeLayout> -->
+
+    <LinearLayout
+        android:id="@+id/mysignature"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/map_back_layout"
+        android:orientation="horizontal"
+        android:layout_above="@+id/clear">
+    </LinearLayout>
+
+
+
+     <Button
+                android:id="@+id/clear"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:background="@layout/custom_download_btn"
+                android:text="Clear"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="6.5dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="17.65dp"
+                android:textColor="#95a5a6"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="4dp"
+                 />
+	
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:layout_height="match_parent" >
+
+    <!-- <RelativeLayout
+        android:id="@+id/map_back_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#34495f" >
+          <RelativeLayout
+        android:id="@+id/Bck_button_save"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:background="#34495f" >
+
+        <ImageView
+            android:id="@+id/back_button_savepic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:padding="5dp"
+            android:src="@drawable/button" />
+</RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:id="@+id/tv_map_header_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_map_header_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_map_header_day"
+                android:layout_centerHorizontal="true"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" >
+
+            <Button
+                android:id="@+id/btn_camera"
+               android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.5dp"
+                android:background="@drawable/done_btns"
+                android:textSize="12sp"
+                 />
+
+            <TextView
+                android:id="@+id/header_save_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="Large Text"
+                android:layout_marginTop="9.6dp"
+                android:textSize="17.65dp"
+                android:textColor="#FFFFFF"
+                 />
+
+            <TextView
+                android:id="@+id/sub_header_save_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header_save_pic"
+                android:layout_centerHorizontal="true"
+                android:text="TextView"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout> -->
+
+    <RelativeLayout
+        android:id="@+id/rlt_camerapic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/map_back_layout"
+        android:background="#D6E0EB" >
+
+        <TextView
+            android:id="@+id/txt_addPic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:text="ADD PICTURE"
+            android:textColor="#bdc3c7"
+            android:textSize="18sp" 
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/img_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/edt_imagename"
+            android:layout_below="@+id/txt_addPic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/users_add_user_icon" />
+
+        <EditText
+            android:id="@+id/edt_imagename"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="70dp"
+            android:background="@drawable/roundable_edittext"
+            android:ems="10"
+            android:maxLength="50"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColor="#000000" />
+
+</RelativeLayout>
+<LinearLayout
+        android:id="@+id/rlt_editdeleted_saveimg"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:background="#34495f"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btn_edit_saveimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="EDIT" />
+
+        <Button
+            android:id="@+id/btn_deleted_saveimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/btn_edit"
+            android:text="DELETE" />
+    </LinearLayout>
+</RelativeLayout>

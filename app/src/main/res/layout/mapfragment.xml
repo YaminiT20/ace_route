@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     
+    
+   <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/offlinemap_back_layout"
+        android:background="#80000000" >
+        
+        <com.skobbler.ngx.map.SKMapViewHolder
+            android:id="@+id/view_group_map_skobblerPG"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <RelativeLayout
+            android:id="@+id/chess_board_background"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/map_background" >
+            
+          
+            
+        </RelativeLayout>
+        
+    </FrameLayout>
+    
+   <ImageView
+   		android:id="@+id/navigateArrow"
+  		android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"
+   		android:src="@drawable/navigationarrowcirclenew"
+   		android:layout_marginLeft="5dp"
+   		android:layout_marginTop="5dp"
+   		android:visibility="gone"/>
+   		
+   <ImageView
+   		android:id="@+id/currentLocationIcon"
+  		android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"
+   		android:src="@drawable/map_navigation"
+   		android:layout_marginTop="25dp"
+   		android:layout_marginRight="20dp"
+   		android:layout_alignParentRight="true"
+   		android:visibility="visible"/> 
+   		
+ <RelativeLayout
+        android:id="@+id/bottom_show"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#34495f"
+        android:visibility="gone">
+
+       <!--  <LinearLayout
+	            android:id="@+id/odr_lst_tree_count_sk"	        
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"	            	            
+	            android:layout_alignParentLeft="true"     
+            android:layout_marginLeft="@dimen/margin_15"        
+	            android:orientation="horizontal">
+	            
+                <TextView	   
+	               	android:id="@+id/total_tree_count_sk"             
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"	                
+                android:background="@drawable/tree_count"	          
+	                android:text=""
+	                android:gravity="center"	
+	                android:layout_gravity="center_vertical"                	               
+	                android:textAppearance="?android:attr/textAppearanceLarge"	                                
+                android:textSize="@dimen/text_size_22"
+                android:textColor="@color/color_blue_dark"
+	                android:textStyle="bold" /> 
+	        </LinearLayout> -->
+	        <RelativeLayout		
+	            android:id="@+id/odr_lst_tree_count_sk"		    
+			    android:layout_width="60dp"
+			    android:layout_height="wrap_content" >
+			
+			    <ImageView			        
+			        android:layout_width="fill_parent"
+			        android:layout_height="250dp"
+			        android:layout_alignParentLeft="true"
+			        android:layout_alignParentRight="true"
+			        android:scaleType="fitXY"
+			        android:src="@drawable/tree_count" />
+			
+			    <TextView
+			        android:id="@+id/total_tree_count_sk"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentTop="true"
+			        android:layout_marginTop="13dp"
+			        android:text=""
+			        android:textSize="@dimen/text_size_25"
+			        android:textColor="@color/color_blue_dark"
+			        android:layout_centerHorizontal="true" 
+			        android:textStyle="bold"/>
+			
+			</RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_15"
+            android:weightSum="2">
+          
+            <Button
+                android:id="@+id/btnLogwayPoint_sk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_logwaypoint_selector"
+                android:paddingLeft="@dimen/margin_15"
+                android:paddingRight="@dimen/margin_15"
+                android:text="@string/lbl_waypoint"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_18"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnSaveChanges_sk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_toRightOf="@+id/btnLogwayPoint_sk"
+                android:layout_weight="1"
+                android:background="@drawable/btn_logwaypoint_selector"
+                android:enabled="false"
+                android:paddingLeft="@dimen/margin_15"
+                android:paddingRight="@dimen/margin_15"
+                android:text="@string/lbl_save_changes"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_18"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+   
+    <WebView
+        android:id="@+id/webviewMapFragSk"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+</RelativeLayout>

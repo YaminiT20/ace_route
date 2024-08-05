@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/ace_main_header"
+        layout="@layout/layout_header" />
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:openDrawer="end"
+        android:layout_below="@id/ace_main_header"
+        android:layout_above="@android:id/tabhost"
+        >
+
+        <FrameLayout
+            android:id="@+id/realtabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" />
+
+        <com.google.android.material.navigation.NavigationView
+
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:fitsSystemWindows="true"
+            app:menu="@menu/activity_main_drawer" />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+    <androidx.fragment.app.FragmentTabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+     	android:layout_height="@dimen/margin_80"     	
+        android:layout_alignParentBottom="true"
+        android:fadingEdge="none"
+        android:showDividers="none"
+        android:tabStripEnabled="false" 
+        android:background="@color/bg_header">
+    </androidx.fragment.app.FragmentTabHost>
+
+</RelativeLayout>

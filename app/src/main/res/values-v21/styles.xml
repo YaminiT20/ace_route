@@ -1,0 +1,187 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light"><!--parent="android:Theme.Light"  YD changed when adding navigation drawer-->
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat"><!--parent="AppBaseTheme"  YD changed when adding navigation drawer-->
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:typeface">serif</item>       <!--YD added this for custom type face for whole app-->
+        <item name="android:timePickerMode">spinner</item>
+    </style>
+
+
+    <style name="button_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/blue_outline</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:onClick">onClick</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <style name="menu_options_group_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/grey_options_group</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingLeft">14dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="menu_options_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/menu_options_selector</item>
+        <item name="android:textSize">21dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">onMenuOptionClick</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="list_items_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">21dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="DialogTheme6Neg" parent="android:Theme.Holo.Light">
+        <item name="android:textSize">16dp</item>
+        <item name="android:shadowColor">#00000000</item>
+        <item name="android:shadowRadius">0</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="DialogTheme4Neg" parent="android:Theme.Holo.Light">
+        <item name="android:textSize">14dp</item>
+        <item name="android:shadowColor">#00000000</item>
+        <item name="android:shadowRadius">0</item>
+        <item name="android:timePickerMode">spinner</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="DialogTheme2Neg" parent="android:Theme.Holo.Light">
+        <item name="android:textSize">18dp</item>
+        <item name="android:shadowColor">#00000000</item>
+        <item name="android:shadowRadius">0</item>
+        <item name="android:timePickerMode">spinner</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="DialogTheme0" parent="android:Theme.Holo.Light">
+        <item name="android:textSize">22dp</item>
+        <item name="android:shadowColor">#00000000</item>
+        <item name="android:shadowRadius">0</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:timePickerMode">spinner</item>
+        <item name="android:theme">@android:style/Theme.Holo.Light</item>
+    </style>
+
+    <style name="DialogTheme2Pos" parent="android:Theme.Holo.Light">
+        <item name="android:textSize">26dp</item>
+        <item name="android:shadowColor">#00000000</item>
+        <item name="android:shadowRadius">0</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:timePickerMode">spinner</item>
+        <item name="android:theme">@android:style/Theme.Holo.Light</item>
+    </style>
+
+
+    <style name="DialogTheme4Pos" parent="android:Theme.Holo.Light">
+        <item name="android:textSize">30dp</item>
+        <item name="android:shadowColor">#00000000</item>
+        <item name="android:shadowRadius">0</item>
+        <item name="android:timePickerMode">spinner</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="DialogTheme6Pos" parent="android:Theme.Holo.Light"><!--AlertDialog.AppCompat.Light earlier using this-->
+        <item name="android:textSize">28dp</item>
+        <item name="android:shadowColor">#00000000</item>
+        <item name="android:shadowRadius">0</item>
+        <item name="android:timePickerMode">spinner</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="commonDialogTheme" parent="android:Theme.Holo.Light.Dialog"><!--using for dialog to make it as required for software becase there was a problem after changing the main theme to appcompact-->
+    </style>
+
+    <style name="MyListFrontContent">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/color_white</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!--popupmenu YD using for pop in software forex map-->
+
+    <style name="popupActivityThem" parent="android:Theme.Light"><!--parent="AppBaseTheme" YD changed when adding navigation drawer-->
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:textAppearanceLargePopupMenu">@style/myPopupMenuTextAppearanceLarge</item>
+        <item name="android:textAppearanceSmallPopupMenu">@style/myPopupMenuTextAppearanceSmall</item>
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@android:color/white</item>
+        <item name="android:textColor">#FF01F0</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+
+    <style name="myPopupMenuTextAppearanceSmall" parent="@android:style/TextAppearance.DeviceDefault.Widget.PopupMenu.Small">
+        <item name="android:textColor">#545656</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+    <style name="myPopupMenuTextAppearanceLarge" parent="@android:style/TextAppearance.DeviceDefault.Widget.PopupMenu.Large">
+        <item name="android:textColor">#545656</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <!--popupmenu end-->
+
+    <style name="mycustomtheme" parent="Base.Theme.AppCompat">
+        <item name="android:theme">@style/popupActivityThem</item>
+    </style>
+
+</resources>

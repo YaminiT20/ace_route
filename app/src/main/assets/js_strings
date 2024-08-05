@@ -1,0 +1,318 @@
+{
+    "appstrjs": [
+        {
+            "id": "0",
+            "lang": "english",
+            "val": [
+                {
+                    "id": 0,
+                    "sn": "Services not available."
+                },
+                {
+                    "id": 1,
+                    "sn": "Entered Hours are not valid"
+                },
+                {
+                    "id": 2,
+                    "sn": "Entered Hours should be greater then 0 and less than 100000"
+                },
+                {
+                    "id": 3,
+                    "sn": "Account Name, Login ID, Passcode are required fields to log into your AceRoute account."
+                },
+                {
+                    "id": 4,
+                    "sn": "Account Name, Login ID are required fields to log into your AceRoute account."
+                },
+                {
+                    "id": 5,
+                    "sn": "Login ID, Passcode are required fields to log into your AceRoute account."
+                },
+                {
+                    "id": 6,
+                    "sn": "Account Name, Passcode are required fields to log into your AceRoute account."
+                },
+                {
+                    "id": 7,
+                    "sn": "Account Name is required field to log into your AceRoute account."
+                },
+                {
+                    "id": 8,
+                    "sn": "Login ID is required field to log into your AceRoute account."
+                },
+                {
+                    "id": 9,
+                    "sn": "Password is required field to log into your AceRoute account."
+                },
+                {
+                    "id": 10,
+                    "sn": "Description cannot be more than 50 character."
+                },
+                {
+                    "id": 11,
+                    "sn": "Order Name must be between 2 to 15 characters long"
+                },
+                {
+                    "id": 12,
+                    "sn": "Order PO must not be grater than 15 characters"
+                },
+                {
+                    "id": 13,
+                    "sn": "Order Desc not valid"
+                },
+                {
+                    "id": 14,
+                    "sn": "Start date not valid"
+                },
+                {
+                    "id": 15,
+                    "sn": "Start time not valid"
+                },
+                {
+                    "id": 16,
+                    "sn": "Duration not valid"
+                },
+                {
+                    "id": 17,
+                    "sn": "Customer name not valid"
+                },
+                {
+                    "id": 18,
+                    "sn": "Customer location not valid"
+                },
+                {
+                    "id": 19,
+                    "sn": "Description cannot be more than 5000 chars."
+                },
+                {
+                    "id": 20,
+                    "sn": "Parts not available"
+                },
+                {
+                    "id": 21,
+                    "sn": "Entered Quantity is not valid"
+                },
+                {
+                    "id": 22,
+                    "sn": "Entered Quantity should be greater then 0 and less then 100000"
+                },
+                {
+                    "id": 23,
+                    "sn": "No image selected"
+                },
+                {
+                    "id": 24,
+                    "sn": "Signature not valid."
+                },
+                {
+                    "id": 25,
+                    "sn": "Po can not be left blank."
+                },
+                {
+                    "id": 26,
+                    "sn": "Create New Order."
+                },
+                {
+                    "id": 27,
+                    "sn": "ORDER NAME."
+                },
+                {
+                    "id": 28,
+                    "sn": "DESCRIPTION."
+                },
+                {
+                    "id": 29,
+                    "sn": "TYPE."
+                },
+                {
+                    "id": 30,
+                    "sn": "CUSTOMER NAME."
+                },
+                {
+                    "id": 31,
+                    "sn": "LOCATION."
+                },
+                {
+                    "id": 32,
+                    "sn": "SCHEDULE DATE."
+                },
+                {
+                    "id": 33,
+                    "sn": "START TIME."
+                },
+                {
+                    "id": 34,
+                    "sn": "DURATION."
+                },
+                {
+                    "id": 35,
+                    "sn": "PO#."
+                },
+                {
+                    "id": 36,
+                    "sn": "STATUS."
+                },
+                {
+                    "id": 37,
+                    "sn": "PRIORITY."
+                },
+                {
+                    "id": 38,
+                    "sn": "ASSIGNED WORKER."
+                },
+                {
+                    "id": 39,
+                    "sn": "Customer."
+                },
+                {
+                    "id": 40,
+                    "sn": "Details."
+                },
+                {
+                    "id": 41,
+                    "sn": "Date/Time."
+                },
+                {
+                    "id": 42,
+                    "sn": "Services."
+                },
+                {
+                    "id": 43,
+                    "sn": "Parts."
+                },
+                {
+                    "id": 44,
+                    "sn": "Workers."
+                },
+                {
+                    "id": 45,
+                    "sn": "CUSTOMER DETAILS."
+                },
+                {
+                    "id": 46,
+                    "sn": "ORDER DETAILS."
+                },
+                {
+                    "id": 47,
+                    "sn": "SERVICES PROVIDED."
+                },
+                {
+                    "id": 48,
+                    "sn": "EDIT SERVICES."
+                },
+                {
+                    "id": 49,
+                    "sn": "COUNT."
+                },
+                {
+                    "id": 50,
+                    "sn": "SERVICE TYPE."
+                },
+                {
+                    "id": 51,
+                    "sn": "Delete Confirmation."
+                },
+                {
+                    "id": 52,
+                    "sn": "PARTS USED."
+                },
+                {
+                    "id": 54,
+                    "sn": "PART TYPE."
+                },
+                {
+                    "id": 55,
+                    "sn": "QUANTITY."
+                },
+                {
+                    "id": 56,
+                    "sn": "JOB AUDIO."
+                },
+                {
+                    "id": 57,
+                    "sn": "ADD AUDIO."
+                },
+                {
+                    "id": 58,
+                    "sn": "PLAY AUDIO."
+                },
+                {
+                    "id": 59,
+                    "sn": "Slight problem with data."
+                },
+                {
+                    "id": 60,
+                    "sn": "The login information you provided doesn't appear to belong to                            an existing account please check entered data and try again"
+                },
+                {
+                    "id": 61,
+                    "sn": "Progress updater"
+                },
+ 
+                {
+                    "id": 62,
+                    "sn": "Syncing start"
+                },
+ 
+                {
+                    "id": 63,
+                    "sn": "Downloading orders"
+                },
+ 
+                {
+                    "id": 64,
+                    "sn": "downloading customer list"
+                },
+ 
+                {
+                    "id": 65,
+                    "sn": "downloading order type"
+                },
+ 
+                {
+                    "id": 66,
+                    "sn": "downloading resource"
+                },
+ 
+                {
+                    "id": 67,
+                    "sn": "downloading part type"
+                },
+                {
+                    "id": 68,
+                    "sn": "downloading service type"
+                },
+                {
+                    "id": 69,
+                    "sn": "sync completed"
+                },
+                {
+                    "id": 70,
+                    "sn": "Order Name must be between 2 to 15 characters long order desc                            not valid"
+                },
+                {
+                    "id": 71,
+                    "sn": "No Internet Connection"
+                }
+            ]
+        },
+        {
+            "id": "1",
+            "lang": "chinese",
+            "values": [
+                {
+                    "id": 0,
+                    "sn": "Services not available in chinese."
+                },
+                {
+                    "id": 1,
+                    "sn": "Entered Hours are not valid in chinese"
+                },
+                {
+                    "id": 2,
+                    "sn": "Entered Hours should be greater then 0 and less than 100000 in chinese"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,178 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context="com.aceroute.mobile.software.fragment.UnavailableFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|top">
+        <LinearLayout
+            android:padding="@dimen/margin_15"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:padding="@dimen/margin_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/pattern_txt"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="PATTERN"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:layout_width="match_parent"
+                    android:textSize="@dimen/text_size_22"
+                    android:layout_height="wrap_content" />
+
+
+                    <EditText
+                        android:id="@+id/txt_tname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Untitled"
+                        android:padding="@dimen/margin_5"
+                        android:maxLength="100"
+                        android:background="@drawable/roundable_edittext"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        android:minLines="2"
+                        android:textSize="@dimen/text_size_20"
+                        android:textCursorDrawable="@null"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/starttime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_marginRight="@dimen/margin_20"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_green_fill_bg"
+                        android:padding="@dimen/margin_10"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        android:singleLine="true"
+                        android:text="06:00 am"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_20" />
+
+                    <TextView
+                        android:id="@+id/endtime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_green_fill_bg"
+                        android:padding="@dimen/margin_10"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        android:singleLine="true"
+                        android:text="07:00 pm"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_20" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_green_fill_bg"
+                    android:padding="@dimen/margin_10"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_20" />
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_15"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:padding="@dimen/margin_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/recurr_txt"
+                    android:textColor="@color/bg_header"
+                    android:text="RECURRENCE"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:layout_width="match_parent"
+                    android:textSize="@dimen/text_size_22"
+                    android:layout_height="wrap_content" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/fm_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_marginRight="@dimen/margin_20"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_green_fill_bg"
+                        android:padding="@dimen/margin_10"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_20" />
+
+                    <TextView
+                        android:id="@+id/to_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_green_fill_bg"
+                        android:padding="@dimen/margin_10"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_20" />
+
+                </LinearLayout>
+
+
+                <CheckBox
+                    android:id="@+id/skipweeked"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:text="Skip Weekend"
+                    android:textSize="@dimen/text_size_20"
+                    android:checked="true"
+                    android:button="@xml/custom_checkbox"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/light_black"
+                    android:layout_height="wrap_content" />
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

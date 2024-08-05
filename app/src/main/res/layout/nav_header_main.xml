@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    <!--android:background="@drawable/side_nav_bar"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10"
+        android:paddingTop="@dimen/margin_20"
+        android:paddingBottom="@dimen/margin_10"
+        android:background="#2c3e50">
+
+        <LinearLayout
+            android:id="@+id/back_drawer"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_10"
+                android:src="@mipmap/forward_drawer" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:id="@+id/res_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:src="@drawable/main_contact" />
+
+        </LinearLayout>
+           <!-- android:paddingTop="@dimen/nav_header_vertical_spacing"-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Android Studio"-->
+            <!--android:textAppearance="@style/TextAppearance.AppCompat.Body1" />-->
+            <!--&lt;!&ndash;android:paddingTop="@dimen/nav_header_vertical_spacing"&ndash;&gt;-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/logout_drawer">
+
+                <TextView
+                    android:id="@+id/res_name_drawer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:textSize="19sp"
+                    android:textColor="#3498de"
+                    android:text="Aceroute" />
+
+                <TextView
+                    android:id="@+id/vehicle_nm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:textSize="15sp"
+                    android:textColor="#3498de"
+                    android:text=""/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/logout_drawer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGOUT"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/rounded_white_bg"
+                android:textColor="@color/black"
+                android:padding="@dimen/margin_10"
+                android:textSize="@dimen/margin_18"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutdrawer_sync"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#1abc9c">
+
+        <ImageView
+            android:id="@+id/sync_drawer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:src="@drawable/download_arrow" />
+
+        <TextView
+            android:id="@+id/txt_syn_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sync Now"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="@dimen/margin_20"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

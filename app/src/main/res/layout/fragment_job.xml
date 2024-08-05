@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:id="@+id/parentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@drawable/rounded_white_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_10" >
+
+            <TextView
+                android:id="@+id/odr_nm_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:text="@string/lbl_ordname"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/text_size_22" />
+
+            <EditText
+                android:id="@+id/odr_nm_edt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_40"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@drawable/roundable_edittext"
+                android:editable="true"
+                android:padding="@dimen/margin_5"
+                android:singleLine="true"
+                android:maxLength="50"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size_22" />
+
+            <TextView
+                android:id="@+id/odr_loc_comment_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:text="@string/lbl_loc_cmnt"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/text_size_22" />
+
+            <com.aceroute.mobile.software.CustomEditText
+                android:id="@+id/odr_loc_comment_edt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_80"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@drawable/roundable_edittext"
+                android:inputType="textMultiLine"
+                android:imeOptions="actionNext"
+                android:padding="@dimen/margin_5"
+                android:maxLength="200"
+                android:textColor="@android:color/black"     
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size_22" />
+
+            <TextView
+                android:id="@+id/odr_type_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:text="@string/lbl_type"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/text_size_22" />
+
+            <TextView
+                android:id="@+id/odr_type_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@drawable/rounded_green_fill_bg"
+                android:padding="@dimen/margin_10"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_22" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@drawable/rounded_white_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_10" >
+
+            <TextView
+                android:id="@+id/odr_custnm_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:text="@string/lbl_cust_nm"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/text_size_22" />
+
+            <EditText
+                android:id="@+id/odr_custnm_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@drawable/rounded_green_fill_bg"
+                android:editable="false"
+                android:padding="@dimen/margin_10"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:text="Select Customer"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_22" />
+
+            <TextView
+                android:id="@+id/odr_location_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:text="@string/lbl_location"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/text_size_22" />
+
+            <EditText
+                android:id="@+id/odr_location_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@drawable/rounded_green_fill_bg"
+                android:editable="false"
+                android:padding="@dimen/margin_10"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@android:color/white"
+               android:textSize="@dimen/text_size_22" />
+        </LinearLayout>
+        
+        
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@drawable/rounded_white_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_10" >
+
+            <TextView
+               android:id="@+id/odr_schedule_date_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:text="@string/lbl_sch_dt"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/text_size_22" />
+
+            <TextView
+                 android:id="@+id/odr_schedule_date_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@drawable/rounded_green_fill_bg"
+                android:padding="@dimen/margin_10"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_22" />
+
+            <TextView
+                android:id="@+id/odr_start_time_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:text="@string/lbl_srt_tm"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/text_size_22" />
+
+            <TextView
+                android:id="@+id/odr_start_time_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@drawable/rounded_green_fill_bg"
+                android:padding="@dimen/margin_10"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_22" />
+            
+            
+              <TextView
+                  android:id="@+id/odr_duration_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:text="@string/lbl_duration"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/text_size_22" />
+
+            <TextView
+                android:id="@+id/odr_duration_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@drawable/rounded_green_fill_bg"
+                android:padding="@dimen/margin_10"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_22" />
+            
+            
+        </LinearLayout>
+        
+          
+           <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@drawable/rounded_white_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_10" >
+
+            <TextView
+                android:id="@+id/odr_alert_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:text="@string/lbl_alerts"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/text_size_22" />
+
+            <EditText
+                android:id="@+id/odrnew_alert_edt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_40"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@drawable/roundable_edittext"
+                android:editable="true"
+                android:padding="@dimen/margin_5"
+                android:singleLine="true" 
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size_22" />
+
+            <TextView
+                android:id="@+id/odrnew_route_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:text="@string/lbl_ponum"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/text_size_22" />
+
+            <EditText
+                android:id="@+id/odrnew_ssd_edt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_40"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@drawable/roundable_edittext"
+                android:padding="@dimen/margin_5"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size_22" />
+
+            <TextView
+                android:id="@+id/odrnew_ssd_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:text="@string/lbl_dlg_ntw"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/text_size_22" />
+
+               <EditText
+                   android:id="@+id/odrnew_route_edt"
+                   android:layout_width="505dp"
+                   android:layout_height="384dp"
+                   android:layout_margin="@dimen/margin_5"
+                   android:background="@drawable/roundable_edittext"
+                   android:maxLength="30"
+                   android:padding="@dimen/margin_5"
+                   android:singleLine="true"
+                   android:textColor="@android:color/black"
+                   android:textCursorDrawable="@null"
+                   android:textSize="@dimen/text_size_22" />
+
+            <TextView
+                android:id="@+id/odrnew_status_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:text="@string/lbl_status"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/text_size_22" />
+
+            <TextView
+                android:id="@+id/odrnew_status_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@drawable/rounded_green_fill_bg"
+                android:padding="@dimen/margin_10"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_22" />
+            
+             <TextView
+                  android:id="@+id/odrnew_priority_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:text="@string/lbl_priority"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/text_size_22" />
+
+            <TextView
+                android:id="@+id/odrnew_priority_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@drawable/rounded_green_fill_bg"
+                android:padding="@dimen/margin_10"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_22" />
+            
+             <TextView
+                android:id="@+id/odrnew_worker_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                 android:visibility="gone"
+                android:text="@string/lbl_asd_wkr"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/text_size_22" />
+
+            <TextView
+                android:id="@+id/odrnew_worker_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@drawable/rounded_green_fill_bg"
+                android:padding="@dimen/margin_10"
+                android:singleLine="true"                
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_22" />
+       </LinearLayout>
+     </LinearLayout>
+
+</ScrollView>

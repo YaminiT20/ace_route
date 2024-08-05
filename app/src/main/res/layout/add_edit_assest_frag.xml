@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:scrollbars="none" >
+
+    <RelativeLayout
+        android:id="@+id/parentView_addedit_asset"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/page_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/margin_10"
+                android:paddingLeft="@dimen/margin_10"
+                android:paddingTop="@dimen/margin_5"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/text_size_18"
+                android:textStyle="bold"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:id="@+id/add_edt_asset_firstbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10"
+                android:background="@drawable/rounded_white_bg"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:padding="@dimen/margin_10" >
+
+                <TextView
+                    android:id="@+id/add_edt_asset_tid_txtvw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:text="Category"
+                    android:textColor="@android:color/darker_gray"
+                    android:textAllCaps="true"
+                    android:visibility="gone"
+                    android:textSize="@dimen/text_size_22" />
+
+                <TextView
+                    android:id="@+id/add_edt_asset_tid_edttx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:background="@drawable/rounded_green_fill_bg"
+                    android:padding="@dimen/margin_10"
+                    android:singleLine="true"
+                    android:visibility="gone"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_22" />
+
+                <TextView
+                    android:id="@+id/add_edt_asset_tid2_txtvw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:text="Condition"
+                    android:textAllCaps="true"
+                    android:visibility="gone"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_size_22" />
+
+                <TextView
+                    android:id="@+id/add_edt_asset_tid2_edttx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:background="@drawable/rounded_green_fill_bg"
+                    android:padding="@dimen/margin_10"
+                    android:singleLine="true"
+                    android:visibility="gone"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_22" />
+
+                <TextView
+                    android:id="@+id/add_edt_asset_note2_txtvw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:text="Name"
+                    android:textAllCaps="true"
+                    android:visibility="gone"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_size_22" />
+
+                <com.aceroute.mobile.software.CustomEditText
+                    android:id="@+id/add_edt_asset_note2_edttx"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_80"
+                    android:layout_margin="@dimen/margin_5"
+                    android:background="@drawable/roundable_edittext"
+                    android:padding="@dimen/margin_10"
+                    android:inputType="textMultiLine"
+                    android:imeOptions="actionNext"
+                    android:maxLength="1000"
+                    android:visibility="gone"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    android:scrollbars="vertical"
+                    android:overScrollMode="always"
+                    android:scrollbarStyle="insideInset"
+                    android:textSize="@dimen/text_size_22" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/add_edt_asset_secondbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10"
+                android:background="@drawable/rounded_white_bg"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:padding="@dimen/margin_10" >
+
+                <TextView
+                    android:id="@+id/add_edt_asset_status_txtvw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:text="@string/lbl_tree_status"
+                    android:visibility="gone"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_size_22" />
+
+                <TextView
+                    android:id="@+id/add_edt_asset_status_edttx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:background="@drawable/rounded_green_fill_bg"
+                    android:padding="@dimen/margin_10"
+                    android:visibility="gone"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_22" />
+
+                <TextView
+                    android:id="@+id/add_edt_asset_pid_txtvw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:text="Priority"
+                    android:visibility="gone"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_size_22" />
+
+                <TextView
+                    android:id="@+id/add_edt_asset_pid_edttx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:background="@drawable/rounded_green_fill_bg"
+                    android:padding="@dimen/margin_10"
+                    android:singleLine="true"
+                    android:visibility="gone"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_22" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/add_edt_asset_thirdbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10"
+                android:background="@drawable/rounded_white_bg"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:padding="@dimen/margin_10" >
+
+                <TextView
+                    android:id="@+id/add_edt_asset_note3_txtvw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:text="Description"
+                    android:textAllCaps="true"
+                    android:visibility="gone"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_size_22" />
+
+                <com.aceroute.mobile.software.CustomEditText
+                    android:id="@+id/add_edt_asset_note3_edttx"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_80"
+                    android:layout_margin="@dimen/margin_5"
+                    android:background="@drawable/roundable_edittext"
+                    android:padding="@dimen/margin_10"
+                    android:inputType="textMultiLine"
+                    android:imeOptions="actionNext"
+                    android:visibility="gone"
+                    android:maxLength="1000"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_22" />
+
+                <TextView
+                    android:id="@+id/add_edt_asset_num1_txtvw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:text="Asset#"
+                    android:visibility="gone"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_size_22" />
+
+                <EditText
+                    android:id="@+id/add_edt_asset_num1_edttx"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40"
+                    android:layout_margin="@dimen/margin_5"
+                    android:background="@drawable/roundable_edittext"
+                    android:editable="true"
+                    android:visibility="gone"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/margin_5"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_22" />
+
+                <TextView
+                    android:id="@+id/add_edt_asset_num2_txtvw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:text="Seq#"
+                    android:visibility="gone"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_size_22" />
+
+                <EditText
+                    android:id="@+id/add_edt_asset_num2_edttx"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40"
+                    android:layout_margin="@dimen/margin_5"
+                    android:background="@drawable/roundable_edittext"
+                    android:editable="true"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/margin_5"
+                    android:visibility="gone"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_22" />
+
+                <TextView
+                    android:id="@+id/add_edt_asset_num6_txtvw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:text="Dropdown num6"
+                    android:textAllCaps="true"
+                    android:visibility="gone"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_size_22" />
+
+                <EditText
+                    android:id="@+id/add_edt_asset_num6_edttx"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40"
+                    android:layout_margin="@dimen/margin_5"
+                    android:background="@drawable/roundable_edittext"
+                    android:editable="true"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/margin_5"
+                    android:singleLine="true"
+                    android:visibility="gone"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_22" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/add_edt_asset_fourthbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10"
+                android:background="@drawable/rounded_white_bg"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:padding="@dimen/margin_10" >
+
+                <TextView
+                    android:id="@+id/add_edt_asset_cnt1_txtvw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:text="Actual Quantity"
+                    android:textAllCaps="true"
+                    android:visibility="gone"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_size_22" />
+
+
+                <EditText
+                    android:id="@+id/add_edt_asset_cnt1_edttx"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40"
+                    android:layout_margin="@dimen/margin_5"
+                    android:background="@drawable/roundable_edittext"
+                    android:editable="true"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/margin_5"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    android:visibility="gone"
+                    android:textSize="@dimen/text_size_22" />
+
+                <TextView
+                    android:id="@+id/add_edt_asset_cnt2_txtvw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:text="Estimated Quantity"
+                    android:textAllCaps="true"
+                    android:visibility="gone"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_size_22" />
+
+                <EditText
+                    android:id="@+id/add_edt_asset_cnt2_edttx"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40"
+                    android:layout_margin="@dimen/margin_5"
+                    android:background="@drawable/roundable_edittext"
+                    android:editable="true"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/margin_5"
+                    android:singleLine="true"
+                    android:visibility="gone"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_22" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/add_edt_asset_fifthbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10"
+                android:background="@drawable/rounded_white_bg"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:padding="@dimen/margin_10" >
+
+                <TextView
+                    android:id="@+id/add_edt_asset_note4_txtvw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:text="Make"
+                    android:textAllCaps="true"
+                    android:visibility="gone"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_size_22" />
+
+                <com.aceroute.mobile.software.CustomEditText
+                    android:id="@+id/add_edt_asset_note4_edttx"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_80"
+                    android:layout_margin="@dimen/margin_5"
+                    android:background="@drawable/roundable_edittext"
+                    android:padding="@dimen/margin_10"
+                    android:inputType="textMultiLine"
+                    android:imeOptions="actionNext"
+                    android:maxLength="1000"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    android:visibility="gone"
+                    android:textSize="@dimen/text_size_22" />
+
+                <TextView
+                    android:id="@+id/add_edt_asset_note5_txtvw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:text="Model"
+                    android:textAllCaps="true"
+                    android:visibility="gone"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_size_22" />
+
+                <com.aceroute.mobile.software.CustomEditText
+                    android:id="@+id/add_edt_asset_note5_edttx"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_80"
+                    android:layout_margin="@dimen/margin_5"
+                    android:background="@drawable/roundable_edittext"
+                    android:padding="@dimen/margin_10"
+                    android:inputType="textMultiLine"
+                    android:imeOptions="actionNext"
+                    android:visibility="gone"
+                    android:maxLength="1000"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_22" />
+
+                <TextView
+                    android:id="@+id/add_edt_asset_note6_txtvw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:text="Location"
+                    android:textAllCaps="true"
+                    android:visibility="gone"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_size_22" />
+
+                <com.aceroute.mobile.software.CustomEditText
+                    android:id="@+id/add_edt_asset_note6_edttx"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_80"
+                    android:layout_margin="@dimen/margin_5"
+                    android:background="@drawable/roundable_edittext"
+                    android:padding="@dimen/margin_10"
+                    android:visibility="gone"
+                    android:maxLength="1000"
+                    android:inputType="textMultiLine"
+                    android:imeOptions="actionNext"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_22" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/add_edt_asset_sixthbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10"
+                android:background="@drawable/rounded_white_bg"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:padding="@dimen/margin_10" >
+
+                <TextView
+                    android:id="@+id/add_edt_asset_num3_txtvw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:text="Tag#"
+                    android:textAllCaps="true"
+                    android:visibility="gone"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_size_22" />
+
+                <TextView
+                    android:id="@+id/add_edt_asset_num3_edttx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:background="@drawable/rounded_green_fill_bg"
+                    android:padding="@dimen/margin_10"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:visibility="gone"
+                    android:textSize="@dimen/text_size_22" />
+
+                <TextView
+                    android:id="@+id/add_edt_asset_num4_txtvw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:text="Dropdown num4"
+                    android:textAllCaps="true"
+                    android:visibility="gone"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_size_22" />
+
+                <TextView
+                    android:id="@+id/add_edt_asset_num4_edttx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:background="@drawable/rounded_green_fill_bg"
+                    android:padding="@dimen/margin_10"
+                    android:singleLine="true"
+                    android:visibility="gone"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_22" />
+
+                <TextView
+                    android:id="@+id/add_edt_asset_num5_txtvw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:text="Dropdown num5"
+                    android:textAllCaps="true"
+                    android:visibility="gone"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_size_22" />
+
+                <TextView
+                    android:id="@+id/add_edt_asset_num5_edttx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:background="@drawable/rounded_green_fill_bg"
+                    android:padding="@dimen/margin_10"
+                    android:singleLine="true"
+                    android:visibility="gone"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_22" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/add_edt_asset_seventhbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10"
+                android:background="@drawable/rounded_white_bg"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:padding="@dimen/margin_10" >
+
+                <TextView
+                    android:id="@+id/add_edt_asset_note1_txtvw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:text="Notes"
+                    android:textAllCaps="true"
+                    android:visibility="gone"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_size_22" />
+
+                <com.aceroute.mobile.software.CustomEditText
+                    android:id="@+id/add_edt_asset_note1_edttx"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_80"
+                    android:layout_margin="@dimen/margin_5"
+                    android:background="@drawable/roundable_edittext"
+                    android:padding="@dimen/margin_10"
+                    android:visibility="gone"
+                    android:inputType="textMultiLine"
+                    android:imeOptions="actionNext"
+                    android:maxLength="5000"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_22" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/add_edt_asset_eighthbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10"
+                android:background="@drawable/rounded_white_bg"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:padding="@dimen/margin_10" >
+
+                <TextView
+                    android:id="@+id/add_edt_asset_ct1_txtvw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:visibility="gone"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_size_22" />
+
+                <com.aceroute.mobile.software.CustomEditText
+                    android:id="@+id/add_edt_asset_ct1_edttx"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_80"
+                    android:layout_margin="@dimen/margin_5"
+                    android:background="@drawable/roundable_edittext"
+                    android:padding="@dimen/margin_10"
+                    android:inputType="textMultiLine"
+                    android:imeOptions="actionNext"
+                    android:textColor="@android:color/black"
+                    android:visibility="gone"
+                    android:maxLength="1000"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_22" />
+
+                <TextView
+                    android:id="@+id/add_edt_asset_ct2_txtvw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:visibility="gone"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_size_22" />
+
+                <com.aceroute.mobile.software.CustomEditText
+                    android:id="@+id/add_edt_asset_ct2_edttx"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_80"
+                    android:layout_margin="@dimen/margin_5"
+                    android:background="@drawable/roundable_edittext"
+                    android:padding="@dimen/margin_10"
+                    android:visibility="gone"
+                    android:inputType="textMultiLine"
+                    android:imeOptions="actionNext"
+                    android:maxLength="1000"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_22" />
+
+                <TextView
+                    android:id="@+id/add_edt_asset_ct3_txtvw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:text=""
+                    android:visibility="gone"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_size_22" />
+
+                <com.aceroute.mobile.software.CustomEditText
+                    android:id="@+id/add_edt_asset_ct3_edttx"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_80"
+                    android:layout_margin="@dimen/margin_5"
+                    android:background="@drawable/roundable_edittext"
+                    android:padding="@dimen/margin_10"
+                    android:visibility="gone"
+                    android:inputType="textMultiLine"
+                    android:imeOptions="actionNext"
+                    android:maxLength="1000"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_22" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/add_edt_asset_ninthbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10"
+                android:background="@drawable/rounded_white_bg"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_10">
+
+                <TextView
+                    android:id="@+id/odr_assets_record_geocode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_logwaypoint_selector"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_14"
+                    android:singleLine="true"
+                    android:text="Record Current Geocode"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_22"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

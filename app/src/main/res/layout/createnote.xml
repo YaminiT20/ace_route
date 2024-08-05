@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#edeff2"
+    android:id="@+id/parentView" >
+
+    
+    <!-- <RelativeLayout
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#34495f" >
+
+    <RelativeLayout
+        android:id="@+id/Bck_button"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:background="#34495f" >
+
+        <ImageView
+            android:id="@+id/back_button_createnote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+           android:layout_marginLeft="12dp"
+            android:padding="5dp"
+            android:src="@drawable/back" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:id="@+id/header_note_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="Large Text"
+                android:layout_marginTop="9.6dp"
+                android:textColor="#FFFFFF"
+                android:textSize="17.65dp"/>
+
+            <TextView
+                android:id="@+id/sub_header_note_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header_note_save"
+                android:layout_centerHorizontal="true"
+                android:text="TextView"
+                android:textColor="#FFFFFF" 
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/Done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.5dp"
+                android:background="@drawable/done_btns"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+    </RelativeLayout> -->
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:textSize="@dimen/text_size_20"
+        android:background="@layout/rounded_edittext"
+        android:gravity="top"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"       
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="26dp"
+        android:text="JOB NOTES"
+        android:textColor="#bdc3c7"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    </RelativeLayout>
+        
+  
+        

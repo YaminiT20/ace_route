@@ -1,0 +1,113 @@
+{
+  "dfn": [
+   {
+    "fld": {
+      "id": 1,
+      "lbl": "Category",
+      "tid": 6,
+      "min": 0,
+      "max": 0,
+      "req": 1,
+      "ind": 1,
+      "ddn": "Option A|Option B,|Option C",
+      "ddnval":"100|200|300",
+      "lst": 1,
+      "fnt": "BI,FF0000"
+    }
+  },
+    {
+      "fld": {
+        "id": 2,
+        "lbl": "TASK SPECIES",
+        "tid": 1,
+        "min": 3,
+        "max": 50,
+        "req": 0,
+        "ind": 0,
+        "ddn": "",
+        "lst": 0,
+        "fnt": ""
+      }
+    },
+    {
+      "fld": {
+        "id": 2,
+        "lbl": "TRIM TYPE",
+        "tid": 1,
+        "min": 3,
+        "max": 50,
+        "req": 0,
+        "ind": 0,
+        "ddn": "",
+        "lst": 0,
+        "fnt": ""
+      }
+    },
+   {
+      "fld": {
+        "id": 2,
+        "lbl": "TASK CREW TYPE",
+        "tid": 1,
+        "min": 3,
+        "max": 50,
+        "req": 0,
+        "ind": 0,
+        "ddn": "",
+        "lst": 0,
+        "fnt": ""
+      }
+    },{
+      "fld": {
+        "id": 2,
+        "lbl": "TASK COMMENT",
+        "tid": 2,
+        "min": 3,
+        "max": 50,
+        "req": 0,
+        "ind": 0,
+        "ddn": "",
+        "lst": 0,
+        "fnt": ""
+      }
+    },{
+      "fld": {
+        "id": 2,
+        "lbl": "TASK CREW TYPE",
+        "tid": 1,
+        "min": 3,
+        "max": 50,
+        "req": 0,
+        "ind": 0,
+        "ddn": "",
+        "lst": 0,
+        "fnt": ""
+      }
+    },{
+      "fld": {
+        "id": 2,
+        "lbl": "DATE",
+        "tid": 4,
+        "min": 3,
+        "max": 50,
+        "req": 0,
+        "ind": 0,
+        "ddn": "",
+        "lst": 0,
+        "fnt": ""
+      }
+    },{
+      "fld": {
+        "id": 2,
+        "lbl": "TIME",
+        "tid": 5,
+        "min": 3,
+        "max": 50,
+        "req": 0,
+        "ind": 0,
+        "ddn": "",
+        "lst": 0,
+        "fnt": ""
+      }
+    }
+  ]
+}

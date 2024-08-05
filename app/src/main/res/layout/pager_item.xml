@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pagerimg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:padding="5dip" >
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:layout_height="wrap_content" />
+   <!-- <ImageView
+        android:id="@+id/imgview_rotate"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:src="@drawable/rotate"
+        android:layout_height="wrap_content"/>-->
+
+
+    <com.aceroute.mobile.software.camera.TouchImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/text_imgshow"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="-8dp" />
+
+    <TextView
+        android:id="@+id/text_imgshow"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:minLines="2"
+        android:layout_marginBottom="5dp" />
+
+</RelativeLayout>

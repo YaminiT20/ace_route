@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "929601983818",
+    "project_id": "aceroutenative",
+    "storage_bucket": "aceroutenative.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929601983818:android:0aad4d46e470cf45365db3",
+        "android_client_info": {
+          "package_name": "com.aceroute.mobile.software"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "929601983818-3o2a87htgjc7erbiqbrbvjae4jm8cf89.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3VGfNLyEbXm00LtbS4zaZhqelqj3RO5s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "929601983818-3o2a87htgjc7erbiqbrbvjae4jm8cf89.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

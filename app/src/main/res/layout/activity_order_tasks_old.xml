@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+  	<com.fortysevendeg.swipelistview.SwipeListView
+        android:id="@+id/order_detail_old_lstvw"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5.0sp"
+        android:listSelector="@null"
+        android:paddingTop="@dimen/margin_5"
+        swipe:swipeBackView="@+id/back"
+        swipe:swipeCloseAllItemsWhenMoveList="true"
+        swipe:swipeFrontView="@+id/front"        
+        swipe:swipeMode="both" />    
+     
+     
+    <WebView
+       android:id="@+id/webviewOrderTaskOld"
+       android:layout_width="80dp"
+       android:layout_height="wrap_content"
+       android:layout_centerVertical="true"
+       android:layout_centerHorizontal="true"     
+       android:visibility="gone"
+       android:scrollbars="none"/> 
+   
+</RelativeLayout>

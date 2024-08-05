@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/searchDialg_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/searchdialog_boundary"
+        android:paddingBottom="3dp">
+
+        <EditText
+            android:id="@+id/search_editText_item"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:paddingLeft="14dp"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:textColor="#34495f"
+            android:paddingRight="60dp"
+            android:hint=" filter list"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/searchbox_searchimg_dia"
+            android:textCursorDrawable="@null"
+            android:background="@android:color/transparent"
+            />
+
+        <ImageView
+            android:id="@+id/searchbox_searchimg_dia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/searchbox_custlist"
+            android:background="@drawable/searchicon_grey" />
+
+    </RelativeLayout>
+
+
+    <!--<EditText
+        android:id="@+id/search_editText_item"
+        android:layout_width="match_parent"
+        android:hint=" filter list_cal"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@drawable/searchboundary"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:layout_height="40dp" />-->
+
+    <Button
+        android:id="@+id/search_button_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_light_blue"
+        android:text="@string/ID_CANCEL"
+        android:layout_alignParentBottom="true"
+        android:textStyle="normal"
+        android:textColor="@color/bg_header"
+        android:textSize="@dimen/text_size_20" />
+
+    <ListView
+        android:id="@+id/search_item_list"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/searchDialg_linear"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/search_button_ok">
+    </ListView>
+
+
+</RelativeLayout>

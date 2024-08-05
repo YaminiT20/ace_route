@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:clickable="true"
+    tools:context="com.aceroute.mobile.software.fragment.ManageShift">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.aceroute.mobile.software.utilities.CustomCalendarView
+        xmlns:calendarNS="http://schemas.android.com/apk/res/com.aceroute.mobile.software"
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

@@ -1,0 +1,251 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:scrollbars="none" >
+
+    <RelativeLayout
+        android:id="@+id/parentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/body_add_site"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#edeff2" >
+
+            <LinearLayout
+                android:id="@+id/firstbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:padding="3dp"
+                android:paddingBottom="10dp" >
+
+                <TextView
+                    android:id="@+id/save_address_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="NAME"
+                    android:textColor="#95a5a6"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/save_address_one_etext"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/save_address_one"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/roundable_edittext"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textSize="18dp"
+                    android:maxLength="50"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/secondbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/firstbox"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:padding="3dp"
+                android:paddingBottom="10dp" >
+
+                <TextView
+                    android:id="@+id/save_address_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/firstbox"
+                    android:layout_marginLeft="5dp"
+                    android:text="ADDRESS"
+                    android:textColor="#95a5a6"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/save_address_two_etext"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/save_address_two"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/roundable_edittext"
+                    android:padding="5dp"
+                    android:paddingLeft="5dp"
+                    android:maxLength="200"
+                    android:textColor="#000000"
+                    android:textSize="18dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sixthbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/secondbox"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:padding="3dp"
+                android:paddingBottom="10dp" >
+
+                <TextView
+                    android:id="@+id/save_address_twoo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="SUITE/APT#"
+                    android:textColor="#95a5a6"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/save_address_twoo_etext"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/save_address_two"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/roundable_edittext"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:maxLength="50"
+                    android:textSize="18dp"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/thirdbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sixthbox"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:padding="3dp"
+                android:paddingBottom="10dp" >
+
+                <TextView
+                    android:id="@+id/save_detail_site"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="DESCRIPTION"
+                    android:textColor="#95a5a6"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/save_detail_site_etext"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/save_detail_site"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/roundable_edittext"
+                    android:paddingLeft="5dp"
+                    android:textSize="18dp"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/forthbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/thirdbox"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:padding="3dp"
+                android:paddingBottom="10dp" >
+
+                <TextView
+                    android:id="@+id/save_site_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="CATEGORY"
+                    android:textColor="#95a5a6"
+                    android:textSize="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/roundable_edittext" >
+
+                    <Spinner
+                        android:id="@+id/save_site_type_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/save_site_type"
+                        android:paddingLeft="5dp"
+                        android:textSize="18dp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fifthbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/forthbox"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:padding="3dp"
+                android:paddingBottom="10dp" >
+
+                <CheckBox
+                    android:id="@+id/get_current_loc_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/secondbox"
+                    android:layout_marginLeft="5dp"
+                    android:button="@xml/custom_checkbox"
+                    android:checked="true"
+                    android:focusable="true"
+                    android:text="USE CURRENT LOCATION"
+                    android:textColor="#95a5a6"
+                    android:textSize="20sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

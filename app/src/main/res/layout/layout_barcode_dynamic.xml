@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <TextView
+        android:id="@+id/tv_barcode"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/margin_25"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/edt_barcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_barcode"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="@dimen/margin_15"
+        android:layout_marginBottom="20dp"
+        android:layout_alignBaseline="@+id/imv_barcode"
+android:paddingLeft="@dimen/margin_5"
+        android:layout_toLeftOf="@+id/imv_barcode"
+        android:background="@drawable/roundable_edittext"
+        android:minHeight="55dp"
+        android:singleLine="true" />
+
+
+
+
+    <ImageView
+        android:id="@+id/imv_barcode"
+        android:layout_width="@dimen/margin_60"
+        android:layout_height="60dp"
+        android:layout_below="@id/tv_barcode"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/barcode" />
+</RelativeLayout>
